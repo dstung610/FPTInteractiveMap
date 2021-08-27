@@ -310,3 +310,7 @@ body {
     background-color: aquamarine;
     transition: opacity 0.5s linear;
 }
+
+#player {
+    z-index: 999;
+}
