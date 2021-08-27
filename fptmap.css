@@ -1,0 +1,312 @@
+@font-face {
+    font-family: GoogleSans;
+    src: url(./assets/GoogleSans-Medium.ttf);
+}
+
+@font-face {
+    font-family: GoogleSansBold;
+    src: url(./assets/GoogleSans-Bold.ttf);
+}
+
+body {
+    margin: 0;
+    font-family: GoogleSans, sans-serif;
+    /* overflow: hidden; */
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* UI Text */
+
+.UI {
+    z-index: 99;
+    /* opacity: 0; */
+}
+
+.gradBG {
+    /* background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)); */
+    background-color: #9b8a76;
+}
+
+#menuText {
+    height: 100vh;
+    width: 20vw;
+}
+
+#fpt-logo-menu {
+    position: absolute;
+    width: 20vw;
+    left: 5%;
+    bottom: 5%;
+    z-index: 5;
+}
+
+#fpt-logo-menu:hover {
+    cursor: pointer
+}
+
+.continent {
+    position: relative;
+    font-size: 1.5vw;
+    font-family: GoogleSansBold;
+    /* color: #fe7c40; */
+    color: #2E5694;
+    z-index: 99;
+}
+
+.country {
+    position: relative;
+    padding: 2px 0;
+    margin: 2px 10px;
+    width: 7.5vw;
+    font-size: 1vw;
+    z-index: 99;
+}
+
+.country:hover {
+    cursor: pointer;
+    /* color: #fe7c40; */
+    text-decoration: underline;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.SubGroup {
+    margin: 0 5px;
+}
+
+
+/* Worldmap UI */
+
+#AsiaGroup {
+    position: absolute;
+    top: 5%;
+    right: 1%;
+}
+
+#EuropeGroup {
+    position: absolute;
+    bottom: 5%;
+    left: 45%;
+}
+
+#AmericaGroup {
+    position: absolute;
+    top: 5%;
+    left: 14%;
+}
+
+
+/* Bot Left Info Box */
+
+.info {
+    position: absolute;
+    bottom: 5%;
+    left: 50px;
+}
+
+.big {
+    font-size: 1.5vw;
+}
+
+.huge {
+    font-size: 2.5vw;
+}
+
+.fontMedium {
+    font-family: GoogleSans, sans-serif;
+}
+
+.fontBold {
+    font-family: GoogleSansBold, sans-serif;
+}
+
+.colorNumber {
+    color: #fe7c40;
+}
+
+.colorTitle {
+    color: #2E5694;
+}
+
+
+/* logo Info */
+
+#fpt-logo {
+    position: absolute;
+    height: auto;
+    width: 20vw;
+    z-index: 5;
+    bottom: 5%;
+    right: 20px;
+}
+
+#fpt-logo:hover {
+    cursor: pointer;
+}
+
+
+/* UI Menu */
+
+#menuWrapper {
+    position: absolute;
+    height: 100vh;
+    width: auto;
+}
+
+#menuContent {
+    /* position: absolute; */
+    padding-top: 200px;
+    padding-left: 20px;
+}
+
+#menuTitle {
+    /* color: #979695; */
+    font-size: 1.5vw;
+    /* position: absolute;
+    left: 2%;
+    top: 5%; */
+}
+
+#menuArrow {
+    /* position: absolute; */
+    top: 0.5%;
+    left: 5.8%;
+}
+
+#menuArrow:hover {
+    cursor: pointer;
+}
+
+#menuArrow img {
+    width: 1.5vw;
+}
+
+.pointIn img {
+    -webkit-transform: rotate(0.5turn);
+    -moz-transform: rotate(0.5turn);
+    transform: rotate(0.5turn);
+}
+
+#backButton {
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+#backButton:hover {
+    cursor: pointer;
+}
+
+#backButton img {
+    width: 50px;
+}
+
+.show {
+    display: initial;
+}
+
+.hide {
+    display: none;
+}
+
+
+/* Map style and position */
+
+.mapContainer {
+    position: absolute;
+    width: 80vw;
+    height: 95vh;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.map {
+    position: absolute;
+    height: 80vh;
+    width: 80vw;
+    z-index: 0;
+}
+
+#zoommap {
+    left: 13%;
+}
+
+#zoommap-Vietnam-Hanoi {
+    position: absolute !important;
+    top: 30%;
+    left: 50%;
+}
+
+#worldmap {
+    /* top: -5%; */
+    /* left: -11%; */
+}
+
+#tourframe {
+    position: absolute;
+    z-index: 999;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #fe7c40;
+    position: absolute;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    left: 47%;
+    top: 45%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.hidden {
+    opacity: 0;
+    z-index: -2!important;
+}
+
+#zoom-vn-hanoi {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+}
+
+#tooltip {
+    position: absolute;
+    display: none;
+    background-color: aquamarine;
+    transition: opacity 0.5s linear;
+}

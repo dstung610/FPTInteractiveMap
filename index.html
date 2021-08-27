@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>FPT MAP</title>
+    <link rel="stylesheet" href="./fptmap.css">
+</head>
+
+<body>
+    <div class="wrapper" id="mount">
+        <!-- BotLeft Info Box -->
+        <div class="info" :class="{hide : isZoomed}">
+            <span class="huge fontBold colorTitle">Global<br>Presence</span><br>
+            <div class="flexColumn">
+                <div class="SubGroup">
+                    <span class="big fontMedium colorNumber">26 </span><br>
+                    <span class="big">Countries & Territories</span><br>
+                </div>
+                <div class="SubGroup">
+                    <span class="big fontMedium colorNumber">57 </span><br>
+                    <span class="big">Offices</span><br>
+                </div>
+                <div class="SubGroup">
+                    <span class="big fontMedium colorNumber">22 </span><br>
+                    <span class="big">Development Centers</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Logo on BotRight -->
+        <img id="fpt-logo" :class="{hide: isZoomed}" src="./assets/fpt-logo.png" @click="hrefLink('https://www.fpt-software.com/')" /><br>
+
+        <!-- UI Control -->
+        <span id="backButton" class="UI" :class="{hide: !isZoomed}" @click="backToWorld()"><img src="./assets/crosshair.png"/></span>
+
+        <!-- UI Menu Text -->
+
+        <div id="menuWrapper" class="UI" :class="{gradBG: isMenuShow}">
+            <div id="menuContent" class="flexColumn">
+                <div id="menuButton" class="flexRow" @click="menuToggle()" :class="{hide : !isZoomed}">
+                    <div>
+                        <span id="menuTitle" class="UI">Country</span>
+                    </div>
+                    <div>
+                        <span id="menuArrow" :class="{pointIn: isMenuShow}"><img src="./assets/arrow.png"/></span>
+                    </div>
+                </div>
+                <div :class="{hide: !isMenuShow}">
+                    <img id="fpt-logo-menu" class="UI" src="./assets/fpt-logo.png" @click="hrefLink('https://www.fpt-software.com/')" />
+                    <div class="flexColumn">
+                        <div>
+                            <span class="continent">Asia</span>
+                        </div>
+                        <div>
+                            <span class="country" style="font-size: 1.5vw; color: #fe7c40" id='VN' @mouseover="hoverCountry('VN')" @mouseleave="defaultMap()" @click="activateCountry('VN')">Vietnam (Headquarter)</span>
+                        </div>
+                        <div class="flexRow">
+                            <div class="flexColumn SubGroup" id="AsiaSubGroup1">
+                                <span class="country">Australia</span>
+                                <span class="country">China</span>
+                                <span class="country">Hongkong</span>
+                                <span class="country">India</span>
+                                <span class="country">Indonesia</span>
+                            </div>
+                            <div class="flexColumn SubGroup" id="AsiaSubGroup2">
+                                <span class="country" id='JP' @mouseover="hoverCountry('JP')" @mouseleave="defaultMap()" @click="activateCountry('JP')">Japan</span>
+                                <span class="country">New Zealand</span>
+                                <span class="country">Malaysia</span>
+                                <span class="country">Myanmar</span>
+                                <span class="country">Philippine</span>
+                            </div>
+                            <div class="flexColumn SubGroup" id="AsiaSubGroup3">
+                                <span class="country">Singapore</span>
+                                <span class="country">South Korea</span>
+                                <span class="country">Taiwan</span>
+                                <span class="country">Thailand</span>
+                                <span class="country">UAE</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flexColumn">
+                        <div>
+                            <span class="continent" id="Europe">Europe</span>
+                        </div>
+                        <div class="flexRow">
+                            <div class="flexColumn SubGroup" id="EuropeSubGroup1">
+                                <span class="country">Germany</span>
+                                <span class="country">France</span>
+                                <span class="country">Slovakia</span>
+                            </div>
+                            <div class="flexColumn SubGroup" id="EuropeSubGroup2">
+                                <span class="country">Czech Republic</span>
+                                <span class="country">United Kingdom</span>
+                                <span class="country">Belgium</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flexColumn">
+                        <div>
+                            <span class="continent">America</span>
+                        </div>
+                        <div class="flexRow">
+                            <div class="flexColumn SubGroup">
+                                <span class="country">USA</span>
+                                <span class="country">Canada</span>
+                            </div>
+                            <div class="flexColumn SubGroup">
+                                <span class="country">Colombia</span>
+                                <span class="country">Costa Rica</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Worldmap UI -->
+        <div class="flexColumn" id="AsiaGroup" :class="{hide: isZoomed}">
+            <div>
+                <span class="continent">Asia</span>
+            </div>
+            <div>
+                <span class="country" style="font-size: 1.5vw; color: #fe7c40" @mouseover="hoverCountry('VN')" @mouseleave="defaultMap()" @click="activateCountry('VN')">Vietnam (Headquarter)</span>
+            </div>
+            <div class="flexRow">
+                <div class="flexColumn SubGroup" id="AsiaSubGroup1">
+                    <span class="country">Australia</span>
+                    <span class="country">China</span>
+                    <span class="country">Hongkong</span>
+                    <span class="country">India</span>
+                    <span class="country">Indonesia</span>
+                </div>
+                <div class="flexColumn SubGroup" id="AsiaSubGroup2">
+                    <span class="country" id='JP' @mouseover="hoverCountry('JP')" @mouseleave="defaultMap()" @click="activateCountry('JP')">Japan</span>
+                    <span class="country">New Zealand</span>
+                    <span class="country">Malaysia</span>
+                    <span class="country">Myanmar</span>
+                    <span class="country">Philippine</span>
+                </div>
+                <div class="flexColumn SubGroup" id="AsiaSubGroup3">
+                    <span class="country">Singapore</span>
+                    <span class="country">South Korea</span>
+                    <span class="country">Taiwan</span>
+                    <span class="country">Thailand</span>
+                    <span class="country">UAE</span>
+                </div>
+            </div>
+        </div>
+        <div class="flexColumn" id="EuropeGroup" :class="{hide: isZoomed}">
+            <div>
+                <span class="continent" id="Europe">Europe</span>
+            </div>
+            <div class="flexRow">
+                <div class="flexColumn SubGroup" id="EuropeSubGroup1">
+                    <span class="country">Germany</span>
+                    <span class="country">France</span>
+                    <span class="country">Slovakia</span>
+                </div>
+                <div class="flexColumn SubGroup" id="EuropeSubGroup2">
+                    <span class="country">Czech Republic</span>
+                    <span class="country">United Kingdom</span>
+                    <span class="country">Belgium</span>
+                </div>
+            </div>
+        </div>
+        <div class="flexColumn" id="AmericaGroup" :class="{hide: isZoomed}">
+            <div>
+                <span class="continent">America</span>
+            </div>
+            <div class="flexRow">
+                <div class="flexColumn SubGroup">
+                    <span class="country">USA</span>
+                    <span class="country">Canada</span>
+                </div>
+                <div class="flexColumn SubGroup">
+                    <span class="country">Colombia</span>
+                    <span class="country">Costa Rica</span>
+                </div>
+            </div>
+        </div>
+        <!-- Tooltip -->
+        <div id="tooltip" class="UI">
+            <p>Some tooltips</p>
+        </div>
+        <!-- Load SVG map external -->
+        <div id="mapContainer" class="mapContainer">
+            <object :data="mapSource" id="worldmap" class="map" :class="{hide: isZoomed}" type="image/svg+xml"></object>
+            <object :data="mapZoomSource" id="zoommap" class="map" :class="{hide: !isZoomed}" type="image/svg+xml"></object>
+        </div>
+
+        <!-- Vietnam Addition Info on zoomed-->
+        <div>
+            <span class="country hide" id="zoom-vn-hanoi" @click="openTour()">HANOI</span>
+        </div>
+
+        <!-- Tour Frame -->
+        <div class="loader" :class="{hide: !isLoading}"></div>
+        <iframe id="tourframe" :class="{hidden: isHideTour}" style="position: absolute" frameborder='0' style='overflow:hidden;height:100%;width:100%' height='100%' width='100%'></iframe>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.2.4"></script>
+    <script>
+        const defaultMap = "worldmapid.svg";
+        var docZoomMap, docWorldMap = document.getElementById('worldmap');
+
+        docWorldMap.onload = function() {
+            objDoc = docWorldMap.contentDocument
+            svg = objDoc.getElementById('worldmap');
+            console.log(svg);
+        }
+
+        const vm = Vue.createApp({
+            data() {
+                return {
+                    mapName: defaultMap,
+                    mapZoomName: defaultMap,
+                    isHide: false,
+                    isHideTour: true,
+                    isLoading: false,
+                    menuShow: false,
+                    isShowList: false,
+                    isZoomed: false,
+                    isVietnam: false,
+                    tourSrc: "https://campus.fpt-software.com/en/",
+                    countries: {
+                        'VN': 'Vietnam',
+                        'JP': 'Japan'
+                    }
+                }
+
+            },
+            methods: {
+                hoverCountry(id) {
+                    console.log(this.mapName);
+                },
+                defaultMap() {
+                    this.mapName = defaultMap;
+                    console.log("Default: " + this.mapName);
+                },
+                activateCountry(country) {
+                    this.isZoomed = true;
+                    this.mapZoomName = "zoom-" + this.countries[country] + ".svg";
+                    console.log("Zoom: " + this.mapZoomName);
+                    if (country === 'VN') {
+                        this.isVietnam = true;
+                    }
+                },
+                menuToggle() {
+                    this.isShowList = !this.isShowList;
+                },
+                backToWorld() {
+                    this.isZoomed = false;
+                    this.mapName = defaultMap;
+                },
+                openTour() {
+                    this.isLoading = true;
+                    this.isHideTour = false;
+                    document.getElementById("tourframe").src = this.tourSrc;
+                },
+                hrefLink(link) {
+                    window.open(link);
+                }
+            },
+            computed: {
+                mapSource() {
+                    return "./assets/" + this.mapName;
+                },
+                mapZoomSource() {
+                    return "./assets/" + this.mapZoomName;
+                },
+                isMenuShow() {
+                    return this.isZoomed && this.isShowList;
+                }
+            }
+        }).mount("#mount");
+        // vm.mount("#mount");
+
+        function initTour() {
+            document.getElementById('zoom-vn-hanoi').click();
+        };
+
+        function zoomClick(id) {
+            document.getElementById(id).click();
+        };
+
+        const tooltipData = {
+            "VN": "Vietnam",
+            "JP": "Japan"
+        };
+
+        // window.onmouseover = updateTooltip;
+        function zoomClickHandler(name) {
+            initTour();
+        }
+
+        function updateTooltipPosition(pos) {
+            if (pos === "left") {
+                document.getElementById('tooltip').style.top = 50 + '%';
+                document.getElementById('tooltip').style.left = 30 + '%';
+            }
+            if (pos === "right") {
+                document.getElementById('tooltip').style.top = 50 + '%';
+                document.getElementById('tooltip').style.left = 75 + '%';
+            }
+
+        };
+
+        function tooltipShow(id) {
+            var pos;
+            if (id === "VN") {
+                pos = "left";
+            } else {
+                pos = 'right';
+            }
+            updateTooltipPosition(pos);
+            document.getElementById('tooltip').style.display = "block";
+            console.log('tooltip show');
+        };
+
+        function tooltipHide() {
+            document.getElementById('tooltip').style.display = "none";
+            console.log('tooltip hide');
+        };
+    </script>
+</body>
+
+</html>
