@@ -282,8 +282,13 @@
             document.getElementById('zoom-vn-hanoi').click();
         };
 
-        function zoomClick(id) {
-            document.getElementById(id).click();
+        const countriesCode = {
+            "Vietnam": "VN",
+            "Japan": "JP"
+        }
+
+        function zoomClick(name) {
+            document.getElementById(countriesCode[name]).click();
         };
 
         const tooltipData = {
@@ -310,7 +315,7 @@
                 "Nagoya Office": "TOMITA-BLD 7F, Ushijima-cho, Nishi-ku, Nagoya-shi, Aichi pref. 451-0046 Tel.: +81-(52)-756-3456 Fax: +81-(52)-756-3457",
                 "Email Support": "Support.Japan@fpt-software.com"
             },
-            "AU": {
+            "Australia": {
                 "Sydney": "Office Level 13, 2 Park Street, Sydney NSW 2000, Australia Contact: Phone: +61 2 9004 7160 Phone: +61 2 9004 7070 Contact person: Ms. Ha Trinh Email: Support.Australia@fpt-software.com",
                 "Melbourne": "Melbourne Office Level 27, Rialto South Tower, 525 Collins Street, Melbourne, Victoria, 3000, Australia",
                 "Perth": "Perth Office Level 32, 152 St. Georges Terrace, Perth WA 6000, Australia"
@@ -318,7 +323,7 @@
             "China": {
                 "Shanghai": "Room 1615,16th Floor, Building 1, Global Creative Center, Lane 166, Minhong Road, Shanghai, P.R., China Tel: +86 (21) 5416 2767 Contact: Ms. Lily Tran Thi Hue Email: Support.China@fpt-software.com"
             },
-            "Czech": {
+            "Czech Republic": {
                 "Strašnice": "Fpt Czech S.R.O. Limuzská 3135/12, 108 00 Strašnice, Czech Republic Contact Person: Mr. Antonin Pavelka Email: fsvk.contact@fpt.sk"
             },
             "France": {
@@ -400,7 +405,14 @@
             initTour();
         }
 
-        function updateTooltipPosition(pos) {
+        function updateTooltipPosition(name) {
+            var pos;
+            if (name === "Vietnam") {
+                pos = "left";
+            } else {
+                pos = 'right';
+            }
+
             if (pos === "left") {
                 document.getElementById('tooltip').style.top = 50 + '%';
                 document.getElementById('tooltip').style.left = 30 + '%';
@@ -409,18 +421,25 @@
                 document.getElementById('tooltip').style.top = 50 + '%';
                 document.getElementById('tooltip').style.left = 75 + '%';
             }
-
         };
 
-        function tooltipShow(id) {
-            var pos;
-            if (id === "VN") {
-                pos = "left";
-            } else {
-                pos = 'right';
+        function updateTooltipData(name) {
+            var newData = ""
+            console.log(name);
+            console.log(tooltipData[name]);
+            for (const [city, address] of Object.entries(tooltipData[name])) {
+                newData += city + ": " + address + "<br>";
             }
-            updateTooltipPosition(pos);
-            document.getElementById('tooltip').style.display = "block";
+            document.getElementById('tooltip').innerHTML = newData;
+        };
+
+        function tooltipShow(name) {
+            var pos, tooltip = document.getElementById('tooltip');
+
+            updateTooltipPosition(name);
+            updateTooltipData(name)
+
+            tooltip.style.display = "block";
             console.log('tooltip show');
         };
 
