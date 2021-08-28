@@ -43,17 +43,20 @@
                 <!-- UI Menu Text -->
 
                 <div id="menuWrapper" class="UI" :class="{gradBG: isMenuShow}">
-                    <div id="menuContent" class="flexColumn">
+                    <div id="menuContent" class="menu-content">
                         <div id="menuButton" class="flexRow" @click="menuToggle()" :class="{hide : !isZoomed}">
-                            <div>
-                                <span id="menuTitle" class="UI">Country</span>
+                            <div class="menu-title">
+                                <h2 class="color-blue" id="menuTitle" class="UI">Country</h3>
+                                <div class="icon-arrow">
+                                    <span id="menuArrow" :class="{pointIn: isMenuShow}"><img src="./assets/arrow.png"/></span>
+                                </div>
                             </div>
-                            <div>
-                                <span id="menuArrow" :class="{pointIn: isMenuShow}"><img src="./assets/arrow.png"/></span>
-                            </div>
+
                         </div>
                         <div :class="{hide: !isMenuShow}">
-                            <img id="fpt-logo-menu" class="UI" src="./assets/fpt-logo.png" @click="hrefLink('https://www.fpt-software.com/')" />
+                            <div class="img-logo">
+                                <img id="fpt-logo-menu" class="UI" src="./assets/fpt-logo.png" @click="hrefLink('https://www.fpt-software.com/')" />
+                            </div>
                             <div class="flexColumn">
                                 <div>
                                     <h3>Asia</h3>
@@ -173,7 +176,7 @@
                 </div>
                 <div class="flexColumn" id="AmericaGroup" :class="{hide: isZoomed}">
                     <div>
-                        <h3>America</h3>
+                        <h3 class="text-right">America</h3>
                     </div>
                     <div class="flexRow">
                         <div class="flexColumn SubGroup">
@@ -189,7 +192,6 @@
 
                 <!-- Tooltip -->
                 <div id="tooltip" class="UI">
-                    <p>Some tooltips</p>
                 </div>
                 <!-- Load SVG map external -->
                 <div id="mapContainer" class="mapContainer">
@@ -205,7 +207,12 @@
                 <!-- Tour Frame -->
                 <div class="loader" :class="{hide: !isLoading}"></div>
                 <!-- <iframe id="tourframe" :class="{hidden: isHideTour}" style="position: absolute" frameborder='0' style='overflow:hidden;height:100%;width:100%' height='100%' width='100%'></iframe> -->
-                <div id="player"></div>
+                <div class="player-wrapper">
+                    <div class="banner-video">
+                        <div id="player"></div>
+                    </div>
+                    
+                </div>
 
             </div>
         </div>
@@ -415,22 +422,24 @@
         function zoomClickHandler(name) {
             initTour();
         }
-
         function updateTooltipPosition(name) {
             var pos;
-            if (name === "Vietnam") {
-                pos = "left";
-            } else {
-                pos = 'right';
+            if (name === "Canada" || name ==="United States") {
+                pos = 'left';
             }
-
+            if (name === "Vietnam" || name === "China") {
+                pos = "right";
+            }
+            if (name === "Gemany") {
+                pos = "center"
+            }
             if (pos === "left") {
-                document.getElementById('tooltip').style.top = 50 + '%';
-                document.getElementById('tooltip').style.left = 30 + '%';
+                document.getElementById('tooltip').style.top = 37 + '%';
+                document.getElementById('tooltip').style.left = 32 + '%';
             }
             if (pos === "right") {
-                document.getElementById('tooltip').style.top = 50 + '%';
-                document.getElementById('tooltip').style.left = 75 + '%';
+                document.getElementById('tooltip').style.top = 52 + '%';
+                document.getElementById('tooltip').style.left = 74 + '%';
             }
         };
 
