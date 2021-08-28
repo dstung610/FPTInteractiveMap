@@ -126,7 +126,8 @@ img {
 
 .gradBG {
     /* background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)); */
-    background-color: #9b8a76;
+    /* background-color: #9b8a76; */
+    background: rgba(170, 170, 170, 0.25);
 }
 
 #menuText {

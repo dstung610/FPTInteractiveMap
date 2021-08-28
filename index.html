@@ -5,8 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json" />
     <link rel="stylesheet" href="./fptmap.css">
-    <title>Document</title>
+    <title>FPT MAP</title>
+    <script type="text/javascript">
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            // window.location.assign("https://3d.witek.solutions");
+        }
+    </script>
 </head>
 
 <body>
@@ -59,7 +65,7 @@
                                     <h3>Asia</h3>
                                 </div>
                                 <div>
-                                    <h4 class=" country color-orange" id='VN' @mouseover="hoverCountry('VN')" @mouseleave="defaultMap()" @click="activateCountry('VN')">Vietnam (Headquarter)</h4>
+                                    <h4 class=" country color-orange" id='VN' @mouseover="hoverCountry('VN')" @mouseleave="unhoverCountry()" @click="activateCountry('VN')">Vietnam (Headquarter)</h4>
                                 </div>
                                 <div class="flexRow">
                                     <div class="flexColumn SubGroup" id="AsiaSubGroup1">
@@ -70,7 +76,7 @@
                                         <p class="country">Indonesia</p>
                                     </div>
                                     <div class="flexColumn SubGroup" id="AsiaSubGroup2">
-                                        <span class="country" id='JP' @mouseover="hoverCountry('JP')" @mouseleave="defaultMap()" @click="activateCountry('JP')">Japan</span>
+                                        <span class="country" id='JP' @mouseover="hoverCountry('JP')" @mouseleave="unhoverCountry()" @click="activateCountry('JP')">Japan</span>
                                         <p class="country">New Zealand</p>
                                         <p class="country">Malaysia</p>
                                         <p class="country">Myanmar</p>
@@ -128,7 +134,7 @@
                         <h3>Asia</h3>
                     </div>
                     <div>
-                        <h4 class="country color-orange" @mouseover="hoverCountry('VN')" @mouseleave="defaultMap()" @click="activateCountry('VN')">Vietnam (Headquarter)</h4>
+                        <h4 class="country color-orange" @mouseover="hoverCountry('VN')" @mouseleave="unhoverCountry()" @click="activateCountry('VN')">Vietnam (Headquarter)</h4>
                     </div>
                     <div class="flexRow">
                         <div class="flexColumn SubGroup" id="AsiaSubGroup1">
@@ -269,7 +275,8 @@
                     this.isLoading = true;
                     this.isHideTour = false;
                     // document.getElementById("tourframe").src = this.tourSrc;
-                    initializeYtPlayer();
+                    // initializeYtPlayer();
+                    window.location.href = this.tourSrc;
                 },
                 hrefLink(link) {
                     window.open(link);
@@ -417,21 +424,8 @@
         }
 
         function updateTooltipPosition(name) {
-            var pos;
-            if (name === "Vietnam") {
-                pos = "left";
-            } else {
-                pos = 'right';
-            }
-
-            if (pos === "left") {
-                document.getElementById('tooltip').style.top = 50 + '%';
-                document.getElementById('tooltip').style.left = 30 + '%';
-            }
-            if (pos === "right") {
-                document.getElementById('tooltip').style.top = 50 + '%';
-                document.getElementById('tooltip').style.left = 75 + '%';
-            }
+            document.getElementById('tooltip').style.top = 5 + '%';
+            document.getElementById('tooltip').style.left = 5 + '%';
         };
 
         function updateTooltipData(name) {
@@ -482,9 +476,11 @@
                 width: '100%',
                 videoId: 'wr36gE1U4is',
                 playerVars: {
-                    'playsinline': 1,
-                    'autoplay': 1
+                    'autoplay': 1,
+                    'control': 0,
+                    'origin': window.location.origin
                 },
+                host: 'https://www.youtube.com',
 
                 events: {
                     'onReady': onPlayerReady,
