@@ -2124,8 +2124,8 @@
 </g>
 <script  type="text/javascript">
 function clickHandler(id){
-    if(window.parent.zoomClick){
-        window.parent.zoomClick(id);
+    if(window.parent.worldClick){
+        window.parent.worldClick(id);
     }
 }
 

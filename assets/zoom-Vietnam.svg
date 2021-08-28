@@ -2,47 +2,7 @@
 <!-- Generator: Adobe Illustrator 23.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1650 1080" style="enable-background:new 0 0 1650 1080;" xml:space="preserve">
-<style type="text/css">
-	.st0{clip-path:url(#SVGID_2_);fill:#FE8149;}
-	.st1{clip-path:url(#SVGID_2_);fill:#FE7C40;}
-    .st0:hover, .st1:hover {
-        cursor: pointer;
-        fill: #ffaa82;
-    }
-	.st2{clip-path:url(#SVGID_2_);fill:#C1C1C1;}
-	.st3{clip-path:url(#SVGID_2_);fill:none;stroke:#FFFFFF;stroke-width:0.75;stroke-miterlimit:10;}
-	.st4{clip-path:url(#SVGID_2_);}
-    .st4:hover .st5{
-        cursor: pointer;
-        fill: #ffaa82;
-    }
-	.st5{fill:#FE7C40;}
-	.st6{clip-path:url(#SVGID_2_);fill-rule:evenodd;clip-rule:evenodd;fill:#FE7C40;}
-	.st7{clip-path:url(#SVGID_2_);fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
-	.st8{clip-path:url(#SVGID_2_);fill:#E2E2E2;}
-	.st9{clip-path:url(#SVGID_2_);fill:none;stroke:#FFFFFF;stroke-width:0.5;stroke-miterlimit:10;}
-	.st10{fill:#2E5794;}
-	.st11{font-family: 'GoogleSans-Bold';}
-	.st12{font-size:58.0955px;}
-	.st13{letter-spacing:-1;}
-	.st14{clip-path:url(#SVGID_4_);fill:#F37B44;}
-	.st15{clip-path:url(#SVGID_4_);fill:none;stroke:#F37B44;stroke-width:2;stroke-miterlimit:10;}
-	.st16{fill:#959493;}
-	.st17{font-family: 'GoogleSans-Medium';}
-	.st18{font-size:24.6479px;}
-	.st19{clip-path:url(#SVGID_6_);fill:#F37B44;}
-	.st20{clip-path:url(#SVGID_6_);fill:none;stroke:#F37B44;stroke-width:2;stroke-miterlimit:10;}
-	.st21{clip-path:url(#SVGID_8_);fill:#F37B44;}
-	.st22{clip-path:url(#SVGID_8_);fill:none;stroke:#F37B44;stroke-width:2;stroke-miterlimit:10;}
-	.st23{clip-path:url(#SVGID_10_);fill:#F37B44;}
-	.st24{clip-path:url(#SVGID_10_);fill:none;stroke:#F37B44;stroke-width:2;stroke-miterlimit:10;}
-	.st25{clip-path:url(#SVGID_12_);fill:#F37B44;}
-	.st26{clip-path:url(#SVGID_12_);fill:none;stroke:#F37B44;stroke-width:2;stroke-miterlimit:10;}
-    .text:hover {
-        cursor: pointer;
-    }
-</style>
-<!-- Start font -->
+     <!-- Start font -->
 <font horiz-adv-x="1000">
 <!-- Google Sans is a trademark of Google. -->
 <!-- Copyright: Copyright 2021 Adobe System Incorporated. All rights reserved. -->
@@ -5683,6 +5643,47 @@
 <glyph unicode="&#xFFFD;" horiz-adv-x="1025" d="M515,1054l0,2l2,0l0,-2M45,314l467,476l468,-476l-468,-476M454,196l98,0C552,213 554,226 558,236C562,246 571,256 584,265C606,277 625,294 642,315C658,336 666,359 666,386C666,427 652,460 625,485C598,510 560,522 511,522C470,522 435,512 406,492C377,471 363,438 362,392l99,0C462,410 467,423 477,431C487,438 498,442 511,442C548,442 566,423 566,386C566,355 551,330 521,310C498,294 481,279 470,264C459,249 454,227 454,196M552,69l0,83l-98,0l0,-83M516,-271l0,2l2,0l0,-2z"/>
 </font>
 <!-- End font -->
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);fill:#FE8149;}
+	.st1{clip-path:url(#SVGID_2_);fill:#FE7C40;}
+    .st0:hover, .st1:hover {
+        cursor: pointer;
+        fill: #ffaa82;
+    }
+	.st2{clip-path:url(#SVGID_2_);fill:#C1C1C1;}
+	.st3{clip-path:url(#SVGID_2_);fill:none;stroke:#FFFFFF;stroke-width:0.75;stroke-miterlimit:10;}
+	.st4{clip-path:url(#SVGID_2_);}
+    .st4:hover .st5{
+        cursor: pointer;
+        fill: #ffaa82;
+    }
+	.st5{fill:#FE7C40;}
+	.st6{clip-path:url(#SVGID_2_);fill-rule:evenodd;clip-rule:evenodd;fill:#FE7C40;}
+	.st7{clip-path:url(#SVGID_2_);fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st8{clip-path:url(#SVGID_2_);fill:#E2E2E2;}
+	.st9{clip-path:url(#SVGID_2_);fill:none;stroke:#FFFFFF;stroke-width:0.5;stroke-miterlimit:10;}
+	.st10{fill:#2E5794;}
+	.st11{font-family: 'GoogleSans-Bold';}
+	.st12{font-size:58.0955px;}
+	.st13{letter-spacing:-1;}
+	.st14{clip-path:url(#SVGID_4_);fill:#F37B44;}
+	.st15{clip-path:url(#SVGID_4_);fill:none;stroke:#F37B44;stroke-width:2;stroke-miterlimit:10;}
+	.st16{fill:#959493;}
+	.st17{font-family: 'GoogleSans-Medium';}
+	.st18{font-size:24.6479px;}
+	.st19{clip-path:url(#SVGID_6_);fill:#F37B44;}
+	.st20{clip-path:url(#SVGID_6_);fill:none;stroke:#F37B44;stroke-width:2;stroke-miterlimit:10;}
+	.st21{clip-path:url(#SVGID_8_);fill:#F37B44;}
+	.st22{clip-path:url(#SVGID_8_);fill:none;stroke:#F37B44;stroke-width:2;stroke-miterlimit:10;}
+	.st23{clip-path:url(#SVGID_10_);fill:#F37B44;}
+	.st24{clip-path:url(#SVGID_10_);fill:none;stroke:#F37B44;stroke-width:2;stroke-miterlimit:10;}
+	.st25{clip-path:url(#SVGID_12_);fill:#F37B44;}
+	.st26{clip-path:url(#SVGID_12_);fill:none;stroke:#F37B44;stroke-width:2;stroke-miterlimit:10;}
+    .text:hover {
+        cursor: pointer;
+    }
+</style>
+
 <g>
 	<defs>
 		<rect id="SVGID_1_" x="-153.8" width="1920" height="1080"/>
@@ -5690,7 +5691,7 @@
 	<clipPath id="SVGID_2_">
 		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
 	</clipPath>
-	<path id="danang" class="st0" d="M770.7,533.1c-0.1,0.2,0,0.4,0.2,0.4c0.7,0.3,1.2-0.5,1.9-0.8c0.8-0.4,1.2-0.3,1-1.4
+	<path id="danang" onmouseover="mouseOverHandler('Da Nang')" onmouseleave="mouseLeaveHandler('Da Nang')" class="st0" d="M770.7,533.1c-0.1,0.2,0,0.4,0.2,0.4c0.7,0.3,1.2-0.5,1.9-0.8c0.8-0.4,1.2-0.3,1-1.4
 		c-0.1-0.8-0.4-1.6-0.8-2.3c-0.1-0.3-0.3-0.6-0.3-0.9c0-0.5,0.3-0.8,0.6-1.2c0.2-0.4,0.2-1-0.2-1.2c-0.2-0.1-0.5,0-0.7-0.1
 		c-0.3-0.1-0.4-0.5-0.3-0.9c0.1-0.5,0.9-1.4,1.4-1.6c0.4-0.2,0.8-0.2,1.1,0.1c0.2,0.1,0.2,0.4,0.4,0.5c0.4,0.3,0.9,0.2,1.3,0.3
 		c0.3,0.1,0.6,0.3,0.9,0.4c0.3,0.1,0.7,0.2,1-0.1c0.2-0.2,0.3-0.6,0.7-0.7c0.5-0.1,1,0.7,0.6,1.5c-0.4,1-2.2,1.7-3.3,1.8
@@ -5699,7 +5700,7 @@
 		c0-0.8,0.1-1.9-0.7-2.6c-0.5-0.4-1.2-0.6-2-0.5c-1.1,0.1-2.1,0.7-2.7,1.7c-0.4,0.7-0.4,0.7-1,0.4l-2.3-0.9c0.8-0.6,1.7-1.6,2.4-3.5
 		c0.1-0.3,0.2-0.6,0.3-0.9c0.5-1.5,1.1-3,2.2-3.9c2-1.4,4.5-0.6,7,0.2c1,0.3,2,0.7,2.9,0.8c0.7,0.1,2.9,0.3,5,0
 		c-0.5,0.2-1.1,0.5-1.3,0.6c-0.9,0.8-1.9,3.7-0.9,5.5c1.1,2,6.5,3.2,5.6,5.3C772.1,532.2,770.9,532.3,770.7,533.1"><title>Da Nang</title></path>
-	<path id="cantho" class="st0" d="M606.5,959c-0.1,0.1-0.1,0.1-0.1,0.3c-0.1,0.8,0.9,1.4,1.5,1.8c0.8,0.6,1.6,1.3,2.3,2
+	<path id="cantho" onmouseover="mouseOverHandler('Can Tho')" onmouseleave="mouseLeaveHandler('Can Tho')" class="st0" d="M606.5,959c-0.1,0.1-0.1,0.1-0.1,0.3c-0.1,0.8,0.9,1.4,1.5,1.8c0.8,0.6,1.6,1.3,2.3,2
 		c0.5,0.5,0.9,1,1.5,1.4c0.3,0.2,0.5,0.4,0.8,0.6c0,0.1-0.1,0.2-0.1,0.2c-0.4,1.1-0.8,2.2-1.6,3c-0.3,0.3-0.5,0.5-0.8,0.8
 		c-0.3,0.2-0.5,0.4-0.8,0.7c-1.4,1.3-2.2,3.3-2.4,6.1l0,0.3c-0.1,1.2-0.2,2.4-1,3.1c-0.6,0.5-1.5,0.6-2.5,0.7
 		c-0.6,0.1-1.2,0.1-1.8,0.3c-1.5,0.5-2.6,1.6-3.7,2.7c-0.9,0.9-1.7,1.8-2.8,2.3c-1.1,0.5-2.3,0.5-3.6,0.6c-1,0-2,0-3,0.3
@@ -5713,7 +5714,7 @@
 		c0-0.1,0-0.3,0.1-0.4c0.2-0.4,0.7-0.4,1.2-0.5c0.2,0,0.4,0,0.7,0.1c0.6,0.1,1.3,0.2,1.9,0c0.8-0.3,1.4-1.1,1.7-2.5
 		c0-0.2,0.1-0.3,0.1-0.5c5.4,5.1,9.8,9.2,13.5,12.7c0.3,0.3,0.6,0.6,0.9,0.9c1.1,1.1,2.2,2.1,3.2,3
 		C603.5,956.1,605.1,957.6,606.5,959"><title>Can Tho</title></path>
-	<path id="hcm" class="st1" d="M670.7,907.8c0,0.3-0.1,0.6,0,1c0.1,0.8,0.6,1.2,1.1,1.6c0.3,0.2,0.5,0.4,0.6,0.6c0,0.1,0,0.1,0,0.2
+	<path id="hcm" onmouseover="mouseOverHandler('Ho Chi Minh')" onmouseleave="mouseLeaveHandler('Ho Chi Minh')" class="st1" d="M670.7,907.8c0,0.3-0.1,0.6,0,1c0.1,0.8,0.6,1.2,1.1,1.6c0.3,0.2,0.5,0.4,0.6,0.6c0,0.1,0,0.1,0,0.2
 		c-0.1,0.1-0.3,0.2-0.4,0.3c-0.1,0.1-0.1,0.2-0.2,0.4c-0.1,0.1-0.2,0.2-0.3,0.3c-0.1,0.2-0.2,0.4-0.2,0.6c-0.6,0.5-1.1,0.5-1.9,0.1
 		c-0.9-0.5-1.4-0.4-2.2,0c-0.4,0.2-0.7,0.4-1,0.7c-0.3,0.2-0.6,0.5-0.9,0.6c-0.2,0.1-0.5-0.1-0.7-0.3c-0.1-0.2-0.3-0.3-0.4-0.5
 		c-0.2-0.2-0.3-0.5-0.5-0.6c-0.7-0.8-1.9-1.1-2.9-0.9c-0.2,0-0.5,0.1-0.7,0.2c-0.3,0.1-0.6,0.2-0.8,0.2c-0.5,0-1-0.4-1.5-0.8
@@ -5724,7 +5725,7 @@
 		c0.1,0.1,0.2,0.3,0.3,0.4c1.8,2.3,3.9,5.2,3.5,6.7c-0.1,0.5-0.5,0.8-1.2,1c-0.4,0.1-1,0.2-1.5,0.2c-0.9,0-2,0-2.7,0.8
 		c-0.1,0.1-0.1,0.2-0.2,0.2c-0.1,0.1-0.2,0.2-0.3,0.3c-0.2,0.1-0.4-0.1-0.8-0.3c-0.4-0.3-0.9-0.6-1.5-0.6h0c-0.8,0-1.4,0.6-1.7,1.2
 		c-0.2,0.6-0.2,1.2-0.2,1.7C670.7,907.5,670.7,907.6,670.7,907.8"><title>Ho Chi Minh</title></path>
-	<path id="quynhon" class="st0" d="M831.5,634.6c-0.1,0.9,1.1,4.3,1.4,5.2c0.1,0.4,0.5,0.4,0.7,0.7c0.3,0.3,0.6,0.6,0.8,0.9
+	<path id="quynhon" onmouseover="mouseOverHandler('Quy Nhon')" onmouseleave="mouseLeaveHandler('Quy Nhon')" class="st0" d="M831.5,634.6c-0.1,0.9,1.1,4.3,1.4,5.2c0.1,0.4,0.5,0.4,0.7,0.7c0.3,0.3,0.6,0.6,0.8,0.9
 		c0.6,1.1,0.4,4.5,0.7,6.1c0.5,2,1.5,3.5,4.5,8.6c0.4,0.6,0.8,1.3,0.6,2.1c-0.1,0.4-0.4,0.7-0.3,1.1c0,0.3,1.6,3.8,2.6,5
 		c0.3,0.4,0.5,0.8,0.1,1c-0.7,0.4-1.5-0.6-1.9-1.3c-0.4-0.7-0.8-1.4-1.5-1.6c-0.2,0-0.3,0-0.4,0c-0.3,0.2-0.2,0.6-0.2,0.9
 		c0.1,0.4,0.2,0.8,0.3,1.3c0.1,0.5,0.3,1.1,0.9,1.3c0.2,0.1,0.5,0,0.7,0c0.6,0.1,1,0.8,1.2,1.4c0.5,1.3,1,2.7,1.4,4
@@ -6147,7 +6148,7 @@
 		c-0.5-0.1-0.9-0.4-1.4-0.7c-0.7-0.4-1.4-0.8-2.2-0.9c-0.1,0-0.2,0-0.3,0c-0.2,0-0.3,0-0.5-0.1c-0.2-0.1-0.3-0.2-0.5-0.3l-0.2-0.2
 		c-0.2-0.2-0.5-0.3-0.7-0.4c0-0.5-0.1-1.1-0.1-1.6c-0.1-0.9-0.2-1.7,0-2.3c0.3-0.9,2.2-1.8,3.3-2c0.7-0.2,1.5-0.2,2.3-0.2h0.2
 		C554.9,199.2,558,196.9,558.9,194.7z"/>
-	<g id="hanoi" onclick="clickHandler('hanoi')" class="st4">
+	<g id="hanoi" onclick="clickHandler('Hanoi')" onmouseover="mouseOverHandler('Hanoi')" onmouseleave="mouseLeaveHandler('Hanoi')" class="st4">
         <title>Hanoi</title>
 		<path class="st5" d="M617.2,162.5c0.1,0.2,0.2,0.3,0.2,0.5c-1.1,0.6-1.8,1.8-2,3.4c-0.7,5.1,0,5.8,3,8.3c0.4,0.3,0.8,0.7,1.3,1.1
 			c1.9,1.6,1.8,2.9,1.8,4.3v0.1h-0.4c-1.8,0-4.4,0.1-5.8,2.1c-0.1,0.2-1.9,3.8-1.9,3.8c0,0.1-0.1,0.2-0.1,0.2
@@ -8857,7 +8858,7 @@
 		C1241,179.6,1244.5,183.1,1244.5,187.5"/>
 	<line class="st15" x1="759.2" y1="187.5" x2="1236.7" y2="187.5"/>
 </g>
-<text class="text" onclick="clickHandler('hanoi')" transform="matrix(1 0 0 1 1298.1907 193.4839)"><tspan x="0" y="0" class="st16 st17 st18">H</tspan><tspan x="17.3" y="0" class="st16 st17 st18">an</tspan><tspan x="45.1" y="0" class="st16 st17 st18">o</tspan><tspan x="59.7" y="0" class="st16 st17 st18">i</tspan></text>
+<text class="text" onclick="clickHandler('Hanoi')" onmouseover="mouseOverHandler('Hanoi')" onmouseleave="mouseLeaveHandler('Hanoi')" transform="matrix(1 0 0 1 1298.1907 193.4839)"><tspan x="0" y="0" class="st16 st17 st18">H</tspan><tspan x="17.3" y="0" class="st16 st17 st18">an</tspan><tspan x="45.1" y="0" class="st16 st17 st18">o</tspan><tspan x="59.7" y="0" class="st16 st17 st18">i</tspan></text>
 <g>
 	<defs>
 		<rect id="SVGID_5_" x="-153.8" width="1920" height="1080"/>
@@ -8869,7 +8870,7 @@
 		C1241,518.6,1244.5,522.1,1244.5,526.5"/>
 	<line class="st20" x1="801.2" y1="526.5" x2="1236.7" y2="526.5"/>
 </g>
-<text class="text" onclick="clickHandler('quynhon')" transform="matrix(1 0 0 1 1298.1907 665.4844)"><tspan x="0" y="0" class="st16 st17 st18">Quynh</tspan><tspan x="76.9" y="0" class="st16 st17 st18">o</tspan><tspan x="91.6" y="0" class="st16 st17 st18">n</tspan></text>
+<text class="text" onclick="clickHandler('quynhon')" onmouseover="mouseOverHandler('Quy Nhon')" onmouseleave="mouseLeaveHandler('Quy Nhon')" transform="matrix(1 0 0 1 1298.1907 665.4844)"><tspan x="0" y="0" class="st16 st17 st18">Quynh</tspan><tspan x="76.9" y="0" class="st16 st17 st18">o</tspan><tspan x="91.6" y="0" class="st16 st17 st18">n</tspan></text>
 <g>
 	<defs>
 		<rect id="SVGID_7_" x="-153.8" width="1920" height="1080"/>
@@ -8881,7 +8882,7 @@
 		C1241,651.6,1244.5,655.1,1244.5,659.5"/>
 	<line class="st22" x1="866.2" y1="659.5" x2="1236.7" y2="659.5"/>
 </g>
-<text class="text" onclick="clickHandler('danang')" transform="matrix(1 0 0 1 1298.1907 532.4839)"><tspan x="0" y="0" class="st16 st17 st18">Da</tspan><tspan x="31.2" y="0" class="st16 st17 st18">n</tspan><tspan x="45.4" y="0" class="st16 st17 st18">a</tspan><tspan x="58.9" y="0" class="st16 st17 st18">n</tspan><tspan x="73.1" y="0" class="st16 st17 st18">g</tspan></text>
+<text class="text" onclick="clickHandler('danang')" onmouseover="mouseOverHandler('Da Nang')" onmouseleave="mouseLeaveHandler('Da Nang')" transform="matrix(1 0 0 1 1298.1907 532.4839)"><tspan x="0" y="0" class="st16 st17 st18">Da</tspan><tspan x="31.2" y="0" class="st16 st17 st18">n</tspan><tspan x="45.4" y="0" class="st16 st17 st18">a</tspan><tspan x="58.9" y="0" class="st16 st17 st18">n</tspan><tspan x="73.1" y="0" class="st16 st17 st18">g</tspan></text>
 <g>
 	<defs>
 		<rect id="SVGID_9_" x="-153.8" width="1920" height="1080"/>
@@ -8893,7 +8894,7 @@
 		C1241,895.6,1244.5,899.1,1244.5,903.5"/>
 	<line class="st24" x1="782.2" y1="903.5" x2="1236.7" y2="903.5"/>
 </g>
-<text class="text" onclick="clickHandler('hcm')" transform="matrix(1 0 0 1 1298.1907 909.4844)"><tspan x="0" y="0" class="st16 st17 st18">H</tspan><tspan x="17.4" y="0" class="st16 st17 st18">ochiminh</tspan></text>
+<text class="text" onclick="clickHandler('hcm')" onmouseover="mouseOverHandler('Ho Chi Minh')" onmouseleave="mouseLeaveHandler('Ho Chi Minh')" transform="matrix(1 0 0 1 1298.1907 909.4844)"><tspan x="0" y="0" class="st16 st17 st18">H</tspan><tspan x="17.4" y="0" class="st16 st17 st18">ochiminh</tspan></text>
 <g>
 	<defs>
 		<rect id="SVGID_11_" x="-153.8" width="1920" height="1080"/>
@@ -8905,11 +8906,22 @@
 		C1241,964.6,1244.5,968.1,1244.5,972.5"/>
 	<line class="st26" x1="669.2" y1="972.5" x2="1236.7" y2="972.5"/>
 </g>
-<text class="text" onclick="onClickHandler('cantho')" transform="matrix(1 0 0 1 1298.1907 978.4844)"><tspan x="0" y="0" class="st16 st17 st18">C</tspan><tspan x="17.9" y="0" class="st16 st17 st18">a</tspan><tspan x="31.4" y="0" class="st16 st17 st18">n</tspan><tspan x="45.1" y="0" class="st16 st17 st18">t</tspan><tspan x="54.8" y="0" class="st16 st17 st18">ho</tspan></text>
+<text class="text" onclick="clickHandler('cantho')" onmouseover="mouseOverHandler('Can Tho')" onmouseleave="mouseLeaveHandler('Can Tho')" transform="matrix(1 0 0 1 1298.1907 978.4844)"><tspan x="0" y="0" class="st16 st17 st18">C</tspan><tspan x="17.9" y="0" class="st16 st17 st18">a</tspan><tspan x="31.4" y="0" class="st16 st17 st18">n</tspan><tspan x="45.1" y="0" class="st16 st17 st18">t</tspan><tspan x="54.8" y="0" class="st16 st17 st18">ho</tspan></text>
 <script>
     function clickHandler(name){
         if(window.parent.zoomClickHandler){
             window.parent.zoomClickHandler(name);
+        }
+    }
+    function mouseOverHandler(name){
+        if(window.parent.zoomMouseOverHandler){
+            window.parent.zoomMouseOverHandler('Vietnam', name);
+        }
+    }
+
+    function mouseLeaveHandler(name){
+        if(window.parent.zoomMouseLeaveHandler){
+            window.parent.zoomMouseLeaveHandler('Vietnam', name);
         }
     }
 </script>

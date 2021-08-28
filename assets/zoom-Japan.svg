@@ -2,35 +2,7 @@
 <!-- Generator: Adobe Illustrator 23.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
-<style type="text/css">
-	.st0{clip-path:url(#SVGID_2_);fill:#E2E2E2;}
-	.st1{clip-path:url(#SVGID_2_);fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
-	.st2{clip-path:url(#SVGID_2_);fill:#BCBEC0;}
-	.st3{clip-path:url(#SVGID_2_);fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
-	.st4{clip-path:url(#SVGID_4_);fill:#D1D3D4;}
-	.st5{clip-path:url(#SVGID_4_);fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
-	.st6{clip-path:url(#SVGID_4_);fill:#F47B45;}
-	.st7{clip-path:url(#SVGID_4_);fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
-	.st8{clip-path:url(#SVGID_4_);fill:#FFFFFF;}
-	.st9{clip-path:url(#SVGID_4_);fill:#F37046;}
-	.st10{clip-path:url(#SVGID_4_);fill:#BCBEC0;}
-	.st11{fill:#2F5795;}
-	.st12{font-family:'GoogleSans-Bold';}
-	.st13{font-size:58.0955px;}
-	.st14{fill:#969595;}
-	.st15{font-family:'GoogleSans-Medium';}
-	.st16{font-size:24.6479px;}
-	.st17{letter-spacing:-1;}
-	.st18{clip-path:url(#SVGID_6_);fill:#F47B45;}
-	.st19{clip-path:url(#SVGID_6_);fill:none;stroke:#F47B45;stroke-width:2;stroke-miterlimit:10;}
-	.st20{letter-spacing:-2;}
-	.st21{fill:none;stroke:#F47B45;stroke-width:2;stroke-miterlimit:10;}
-    .st22{fill:#F47B45}
-    text:hover {
-        cursor: pointer;
-    }
-</style>
-<!-- Start font -->
+     <!-- Start font -->
 <font horiz-adv-x="1000">
 <!-- Google Sans is a trademark of Google. -->
 <!-- Copyright: Copyright 2021 Adobe System Incorporated. All rights reserved. -->
@@ -5671,6 +5643,35 @@
 <glyph unicode="&#xFFFD;" horiz-adv-x="1025" d="M515,1054l0,2l2,0l0,-2M45,314l467,476l468,-476l-468,-476M454,196l98,0C552,213 554,226 558,236C562,246 571,256 584,265C606,277 625,294 642,315C658,336 666,359 666,386C666,427 652,460 625,485C598,510 560,522 511,522C470,522 435,512 406,492C377,471 363,438 362,392l99,0C462,410 467,423 477,431C487,438 498,442 511,442C548,442 566,423 566,386C566,355 551,330 521,310C498,294 481,279 470,264C459,249 454,227 454,196M552,69l0,83l-98,0l0,-83M516,-271l0,2l2,0l0,-2z"/>
 </font>
 <!-- End font -->
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);fill:#E2E2E2;}
+	.st1{clip-path:url(#SVGID_2_);fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st2{clip-path:url(#SVGID_2_);fill:#BCBEC0;}
+	.st3{clip-path:url(#SVGID_2_);fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+	.st4{clip-path:url(#SVGID_4_);fill:#D1D3D4;}
+	.st5{clip-path:url(#SVGID_4_);fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+	.st6{clip-path:url(#SVGID_4_);fill:#F47B45;}
+	.st7{clip-path:url(#SVGID_4_);fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st8{clip-path:url(#SVGID_4_);fill:#FFFFFF;}
+	.st9{clip-path:url(#SVGID_4_);fill:#F37046;}
+	.st10{clip-path:url(#SVGID_4_);fill:#BCBEC0;}
+	.st11{fill:#2F5795;}
+	.st12{font-family:'GoogleSans-Bold';}
+	.st13{font-size:58.0955px;}
+	.st14{fill:#969595;}
+	.st15{font-family:'GoogleSans-Medium';}
+	.st16{font-size:24.6479px;}
+	.st17{letter-spacing:-1;}
+	.st18{clip-path:url(#SVGID_6_);fill:#F47B45;}
+	.st19{clip-path:url(#SVGID_6_);fill:none;stroke:#F47B45;stroke-width:2;stroke-miterlimit:10;}
+	.st20{letter-spacing:-2;}
+	.st21{fill:none;stroke:#F47B45;stroke-width:2;stroke-miterlimit:10;}
+    .st22{fill:#F47B45}
+    text:hover {
+        cursor: pointer;
+    }
+</style>
+
 <g>
 	<defs>
 		<rect id="SVGID_3_" width="1920" height="1080"/>
@@ -6644,17 +6645,17 @@
 </g>
 <text transform="matrix(1 0 0 1 1604.1836 1004.5195)" class="st11 st12 st13">Japan</text>
 <g id="Overlay">
-	<text transform="matrix(1 0 0 1 894.568 409.6121)" class="st14 st15 st16">Nagoya Office</text>
-    <text transform="matrix(1 0 0 1 894.5681 270.2762)" class="st14 st15 st16">Hiroshima</text>
-    <text transform="matrix(1 0 0 1 894.5682 305.1102)" class="st14 st15 st16">Fukuoka-shi, Fukuoka</text>
-    <text transform="matrix(1 0 0 1 894.5682 339.9442)" class="st14 st15 st16">Okinawa</text>
-    <text transform="matrix(1 0 0 1 894.5681 374.778)" class="st14 st15 st16">Toyota Development Center</text>
-    <text transform="matrix(1 0 0 1 1676.4453 446.1558)" class="st14 st15 st16">Tokyo</text>
-    <text transform="matrix(1 0 0 1 1676.4453 480.679)" class="st14 st15 st16">Sapporo</text>
-    <text transform="matrix(1 0 0 1 1676.4453 515.2021)" class="st14 st15 st16">Shizuoka</text>
-    <text transform="matrix(1 0 0 1 1387.1317 764.1576)" class="st14 st15 st16">Osaka</text>
-    <text transform="matrix(1 0 0 1 1387.1317 795.0338)" class="st14 st15 st16">Yokohama</text>
-    <text transform="matrix(1 0 0 1 1387.1317 825.9105)" class="st14 st15 st16">Aichi (Kariya Development Center)</text>
+	<text onmouseover="mouseOverHandler('Nagoya Office')" onmouseleave="mouseLeaveHandler('Nagoya Office')" transform="matrix(1 0 0 1 894.568 409.6121)" class="st14 st15 st16">Nagoya Office</text>
+    <text onmouseover="mouseOverHandler('Hiroshima')" onmouseleave="mouseLeaveHandler('Hiroshima')" transform="matrix(1 0 0 1 894.5681 270.2762)" class="st14 st15 st16">Hiroshima</text>
+    <text onmouseover="mouseOverHandler('Fukuoka-shi, Fukuoka')" onmouseleave="mouseLeaveHandler('Fukuoka-shi, Fukuoka')" transform="matrix(1 0 0 1 894.5682 305.1102)" class="st14 st15 st16">Fukuoka-shi, Fukuoka</text>
+    <text onmouseover="mouseOverHandler('Okinawa')" onmouseleave="mouseLeaveHandler('Okinawa')" transform="matrix(1 0 0 1 894.5682 339.9442)" class="st14 st15 st16">Okinawa</text>
+    <text onmouseover="mouseOverHandler('Toyota Development Center')" onmouseleave="mouseLeaveHandler('Toyota Development Center')" transform="matrix(1 0 0 1 894.5681 374.778)" class="st14 st15 st16">Toyota Development Center</text>
+    <text onmouseover="mouseOverHandler('Tokyo')" onmouseleave="mouseLeaveHandler('Tokyo')" transform="matrix(1 0 0 1 1676.4453 446.1558)" class="st14 st15 st16">Tokyo</text>
+    <text onmouseover="mouseOverHandler('Sapporo')" onmouseleave="mouseLeaveHandler('Sapporo')" transform="matrix(1 0 0 1 1676.4453 480.679)" class="st14 st15 st16">Sapporo</text>
+    <text onmouseover="mouseOverHandler('Shizuoka')" onmouseleave="mouseLeaveHandler('Shizuoka')" transform="matrix(1 0 0 1 1676.4453 515.2021)" class="st14 st15 st16">Shizuoka</text>
+    <text onmouseover="mouseOverHandler('Osaka')" onmouseleave="mouseLeaveHandler('Osaka')" transform="matrix(1 0 0 1 1387.1317 764.1576)" class="st14 st15 st16">Osaka</text>
+    <text onmouseover="mouseOverHandler('Yokohama')" onmouseleave="mouseLeaveHandler('Yokohama')" transform="matrix(1 0 0 1 1387.1317 795.0338)" class="st14 st15 st16">Yokohama</text>
+    <text onmouseover="mouseOverHandler('Aichi (Kariya Development Center)')" onmouseleave="mouseLeaveHandler('Aichi (Kariya Development Center)')" transform="matrix(1 0 0 1 1387.1317 825.9105)" class="st14 st15 st16">Aichi (Kariya Development Center)</text>
 	<line class="st21" x1="861.6" y1="265.9" x2="861.6" y2="649.5"/>
     <polyline class="st21" points="1435.4,237.3 1567.7,237.3 1567.7,699 1311.5,699"/>
     <line class="st21" x1="1143.8" y1="759.1" x2="1357.1" y2="759.1"/>
@@ -6663,4 +6664,17 @@
     <path class="st22" d="M1648.6,477.7c0,4.4-3.5,7.9-7.9,7.9s-7.9-3.5-7.9-7.9s3.5-7.9,7.9-7.9C1645,469.8,1648.6,473.3,1648.6,477.7"/>
     <line class="st21" x1="1567.7" y1="477.7" x2="1640.7" y2="477.7"/>
 </g>
+<script>
+function mouseOverHandler(name){
+        if(window.parent.zoomMouseOverHandler){
+            window.parent.zoomMouseOverHandler('Japan', name);
+        }
+    }
+
+    function mouseLeaveHandler(name){
+        if(window.parent.zoomMouseLeaveHandler){
+            window.parent.zoomMouseLeaveHandler('Japan', name);
+        }
+    }
+</script>
 </svg>
