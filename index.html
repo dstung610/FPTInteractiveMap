@@ -436,12 +436,13 @@
         };
 
         function updateTooltipData(name) {
-            var newData = ""
+            var newData = "<h2 class='color-orange'>" + name + "</h2>";
             console.log(name);
             console.log(tooltipData[name]);
             for (const [city, address] of Object.entries(tooltipData[name])) {
-                newData += city + ": " + address + "<br>";
+                newData += "<p>" + city + ":<br>" + address + "</p><br>";
             }
+            console.log(newData);
             document.getElementById('tooltip').innerHTML = newData;
         };
 
