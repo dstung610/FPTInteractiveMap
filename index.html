@@ -431,8 +431,28 @@
         }
 
         function updateTooltipPosition(name) {
-            document.getElementById('tooltip').style.top = 5 + '%';
-            document.getElementById('tooltip').style.left = 5 + '%';
+            var pos;
+            if (name === "Canada" || name ==="USA" || name ==="Colombia" || name ==="Costa Rica") {
+                pos = 'left';
+            }
+            if (name === "Vietnam" || name === "China") {
+                pos = "right";
+            }
+            if (name === "Gemany" || name === "France" || name === "UK") {
+                pos = "center"
+            }
+            if (pos === "left") {
+                document.getElementById('tooltip').style.top = 30 + '%';
+                document.getElementById('tooltip').style.left = 35 + '%';
+            }
+            if (pos === "right") {
+                document.getElementById('tooltip').style.top = 30 + '%';
+                document.getElementById('tooltip').style.left = 74 + '%';
+            }
+            if (pos === "center") {
+                document.getElementById('tooltip').style.top = 30 + '%';
+                document.getElementById('tooltip').style.left = 50 + '%';
+            }
         };
 
         function updateTooltipData(name) {
