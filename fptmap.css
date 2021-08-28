@@ -418,5 +418,10 @@ img {
     position: absolute;
     display: none;
     background-color: aquamarine;
-    transition: opacity 0.5s linear;
+    transition: opacity 1s linear;
+    animation: fade 2s linear;
 }
+@-webkit-keyframes fade {
+    0%{ opacity: 0; }
+    50% { opacity: 1; }
+  }
