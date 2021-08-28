@@ -6,14 +6,7 @@
 	.st0{fill:#E2E2E2;stroke:#FFFFFF;stroke-miterlimit:10;}
 	.st1{fill:#FE7C40;stroke:#FFFFFF;stroke-miterlimit:10;}
     .st1:hover{
-        fill: #ffaa82;
-        cursor: hand;
-        cursor: pointer;
-    }
-    .ghover {
-        pointer-events: bounding-box;
-        fill: #ffaa82;
-        cursor: hand;
+        fill: #ffaa82;        
         cursor: pointer;
     }
 </style>
