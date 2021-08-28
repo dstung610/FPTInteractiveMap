@@ -424,22 +424,26 @@
         }
         function updateTooltipPosition(name) {
             var pos;
-            if (name === "Canada" || name ==="United States") {
+            if (name === "Canada" || name ==="USA" || name ==="Colombia" || name ==="Costa Rica") {
                 pos = 'left';
             }
             if (name === "Vietnam" || name === "China") {
                 pos = "right";
             }
-            if (name === "Gemany") {
+            if (name === "Gemany" || name === "France" || name === "UK") {
                 pos = "center"
             }
             if (pos === "left") {
-                document.getElementById('tooltip').style.top = 37 + '%';
-                document.getElementById('tooltip').style.left = 32 + '%';
+                document.getElementById('tooltip').style.top = 30 + '%';
+                document.getElementById('tooltip').style.left = 35 + '%';
             }
             if (pos === "right") {
-                document.getElementById('tooltip').style.top = 52 + '%';
+                document.getElementById('tooltip').style.top = 30 + '%';
                 document.getElementById('tooltip').style.left = 74 + '%';
+            }
+            if (pos === "center") {
+                document.getElementById('tooltip').style.top = 30 + '%';
+                document.getElementById('tooltip').style.left = 50 + '%';
             }
         };
 
