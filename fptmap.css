@@ -483,6 +483,20 @@ img {
     }
 }
 
+#dismissButton {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+}
+
+#dismissButton:hover {
+    cursor: pointer;
+}
+
+#dismissButton img {
+    width: 20px;
+}
+
 
 /* video player */
 
