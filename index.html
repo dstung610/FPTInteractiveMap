@@ -281,6 +281,7 @@
                     }
                     document.getElementById('tooltip').style.width = 24 + "vw";
                     tooltipShow(name);
+                    tooltipStay = true;
                 },
                 activateCountryPrecontent(country) {
                     if (country === "VN") {
@@ -320,9 +321,6 @@
                 hrefLink(link) {
                     window.open(link);
                 },
-                dismissTooltip() {
-                    tooltipHide();
-                },
                 dismissVideo() {
                     this.isVideoShowing = false;
                     player.stopVideo()
@@ -356,6 +354,8 @@
             document.getElementById(countriesCode[country]).click();
         }
 
+
+        var tooltipStay = false;
         const tooltipData = {
             "Vietnam": {
                 "Hanoi": {
@@ -536,7 +536,7 @@
         function updateTooltipData(name, isDismissable) {
             var newData = "";
             if (isDismissable) {
-                newData += "<span id='dismissButton' onClick='tooltipHide()''><img src='./assets/crosshair.png'/></span>";
+                newData += "<span id='dismissButton' onClick='tooltipDimiss()''><img src='./assets/crosshair.png'/></span>";
             }
             newData += "<h2 class='color-orange'>" + name + "</h2>";
             console.log(name);
@@ -549,6 +549,9 @@
         };
 
         function tooltipShow(name) {
+            if (tooltipStay) {
+                return;
+            }
             var pos, tooltip = document.getElementById('tooltip');
 
             updateTooltipPosition(name);
@@ -563,10 +566,18 @@
         };
 
         function tooltipHide() {
+            if (tooltipStay) {
+                return;
+            }
             document.getElementById('tooltip').style.display = "none";
             document.getElementById('tooltip').style.width = 24 + "vw";
             console.log('tooltip hide');
         };
+
+        function tooltipDimiss() {
+            tooltipStay = false;
+            tooltipHide();
+        }
 
         // Tooltip handling in Zoommap
         // window.onmouseover = updateTooltip;
