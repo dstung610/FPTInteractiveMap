@@ -324,7 +324,12 @@
                 },
                 dismissVideo() {
                     this.isVideoShowing = false;
-                    player.stopVideo();
+                    try {
+                        player.stopVideo();
+                    } catch {
+                        //ignore the error on 2nd attempt to stop player
+                    }
+
                     this.activateCountry(this.countryCurrentVideo);
                 }
             },
