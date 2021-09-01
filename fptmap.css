@@ -8,6 +8,16 @@
     src: url(./assets/GoogleSans-Bold.ttf);
 }
 
+@font-face {
+    font-family: Meiryo;
+    src: url(./assets/meiryo.ttc);
+}
+
+@font-face {
+    font-family: MeiryoB;
+    src: url(./assets/meiryob.ttc);
+}
+
 
 /* ----------Common------------- */
 
@@ -22,6 +32,14 @@ body {
     margin: 0;
     font-family: GoogleSans, sans-serif;
     /* overflow: hidden; */
+}
+
+:lang(en) {
+    font-family: GoogleSans, sans-serif;
+}
+
+:lang(jp) {
+    font-family: Meiryo, sans-serif;
 }
 
 article,
@@ -522,4 +540,40 @@ img {
 
 #player:first-child div {
     margin: 0 auto;
+}
+
+
+/* language switcher */
+
+.language {
+    position: absolute;
+    bottom: 2vh;
+    right: 1vw;
+}
+
+.flag {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: aquamarine;
+    border: 1px solid grey;
+    margin: 0 2px;
+}
+
+.flag:hover {
+    cursor: pointer;
+}
+
+#flag-vn {
+    background-image: url(./assets/vn.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#flag-jp {
+    background-image: url(./assets/jp.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

@@ -49,6 +49,13 @@
                 <!-- <div class="img-fluid logo">
                     <img id="fpt-logo" :class="{hide: isZoomed}" src="./assets/fpt-logo.png" @click="hrefLink('https://www.fpt-software.com/')" /><br>
                 </div> -->
+                <!-- Language Switch -->
+                <div class="language UI">
+                    <div class="flexRow">
+                        <div id="flag-vn" class='flag' title="Vietnamese" @click="hrefLink('index.html')"></div>
+                        <div id='flag-jp' class='flag' title="Japanese" @click="hrefLink('jp.html')"></div>
+                    </div>
+                </div>
 
                 <!-- UI Control -->
                 <span id="backButton" class="UI" :class="{hide: !isBackButtonShow}" @click="backToWorld()"><img src="./assets/crosshair.png"/></span>
@@ -334,7 +341,8 @@
                     window.location.href = this.tourSrc;
                 },
                 hrefLink(link) {
-                    window.open(link);
+                    // window.open(link);
+                    window.location = link;
                 },
                 dismissVideo() {
                     this.isVideoShowing = false;
