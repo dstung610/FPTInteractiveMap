@@ -155,7 +155,7 @@
                             <p class="country" @click="clickCountry('Indonesia')">Indonesia</p>
                         </div>
                         <div class="flexColumn SubGroup" id="AsiaSubGroup2">
-                            <span class="country" id='JP' @mouseover="hoverCountry('JP')" @mouseleave="unhoverCountry()" @click="activateCountry('JP')">Japan</span>
+                            <span class="country" id='JP' @mouseover="hoverCountry('JP')" @mouseleave="unhoverCountry()" @click="activateCountryPrecontent('JP')">Japan</span>
                             <!-- <p class="country" @click="clickCountry('New Zealand')">New Zealand</p> -->
                             <p class="country" @click="clickCountry('Malaysia')">Malaysia</p>
                             <p class="country" @click="clickCountry('Myanmar')">Myanmar</p>
@@ -285,12 +285,24 @@
                     tooltipStay = true;
                 },
                 activateCountryPrecontent(country) {
-                    if (country === "VN") {
-                        this.isVideoShowing = true;
-                        this.countryCurrentVideo = country;
-                        this.isWorldUIShow = false;
-                        initializeYtPlayer("MPYyock1CZA");
+                    var urlvideoid = ""
+                    switch (country) {
+                        case "VN":
+                            urlvideoid = "MPYyock1CZA";
+                            break;
+                        case "JP":
+                            urlvideoid = "TBypYZVaPiE";
+                            break;
+                        default:
+                            urlvideoid = "";
+                            break;
+                    }
 
+                    this.isVideoShowing = true;
+                    this.countryCurrentVideo = country;
+                    this.isWorldUIShow = false;
+                    if (urlvideoid !== "") {
+                        initializeYtPlayer(urlvideoid);
                     }
 
                 },
