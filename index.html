@@ -243,6 +243,10 @@
             console.log(svg);
         }
 
+
+        function linkToTour() {
+            parent.window.location = "https://campus.fpt-software.com/en/"
+        }
         //Vue Instance
         const vm = Vue.createApp({
             data() {
@@ -329,7 +333,8 @@
                     this.isHideTour = false;
                     // document.getElementById("tourframe").src = this.tourSrc;
                     // initializeYtPlayer();
-                    window.location.href = this.tourSrc;
+                    // window.location.href = this.tourSrc;
+                    linkToTour();
                 },
                 hrefLink(link) {
                     window.open(link);
