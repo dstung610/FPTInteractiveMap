@@ -318,7 +318,7 @@
                 activateCountry(country) {
                     this.isZoomed = true;
                     this.isWorldUIShow = false;
-                    this.mapZoomName = "zoom-" + this.countries[country] + ".svg";
+                    this.mapZoomName = "zoom-" + this.countries[country] + "-JP.svg";
                     console.log("Zoom: " + this.mapZoomName);
                     if (country === 'VN') {
                         this.isVietnam = true;
@@ -381,21 +381,21 @@
         var tooltipStay = false;
         const tooltipData = {
             "Vietnam": {
-                "Hanoi": {
+                "ハノイ": {
                     "FPT Software": "17 Duy Tân, Cầu Giấy, Hà Nội",
                     "FPT Software": "FPT Tower, Lot D28, Cau Giay New Urban Area, Dich Vong Ward, Cau Giay District, Hanoi City, Vietnam Tel: +84 24 7300 7300<br>Fax: +84 24 37687410",
                     "FPT Software Hanoi": "Làng công nghệ số 3 và số 4, Khu phần mềm, khu Công nghệ cao Hòa Lạc, Km 29 Đại Lộ Thăng Long, Xã Tân Xã, Huyện Thạch Thất, Hà Nội"
                 },
-                "Ho Chi Minh": {
+                "ホーチミン市": {
                     "FPT Software Hochiminh": "Lô T2, đường D1, khu công nghệ cao, Phường Tân Phú, Quận 9, Thành phố Hồ Chí Minh"
                 },
-                "Da Nang": {
+                "ダナン": {
                     "Công ty TNHH Dịch vụ xử lý số FPT FPT Digital Processing Service Company Limited": "Tòa nhà FPT, KCN Đà Nẵng, An Đồn, Phường An Hải Bắc, Quận Sơn Trà, Thành phố Đà Nẵng, Việt Nam FPT Building, Road No.1, Danang Industrial Zone An Don, An Hai Bac ward, Son Tra District, Da Nang City"
                 },
-                "Quy Nhon": {
+                "クイニョン": {
                     "Chi nhánh công ty TNHH Dịch vụ xử lý số FPT tại Quy Nhơn FPT Digital Processing Service Company Limited - Quy Nhon branch": "Lầu 8, Tòa nhà 47, số 8 đường Biên Cương, phường Ngô Mây, thành phố Quy Nhơn, tỉnh Bình Định, Việt Nam"
                 },
-                "Can Tho": {
+                "カントー": {
                     "Chi nhánh Công ty TNHH Phần mềm FPT Hồ Chí Minh tại Cần Thơ FPT SOFTWARE HOCHIMINH CO.,LTD-CAN THO BRANCH": "Số 600 đường Nguyễn Văn Cừ, Phường An Bình, Quận Ninh Kiều, Thành Phố Cần Thơ No. 600 Nguyen Van Cu Street, An Binh Ward, Ninh Kieu District, Can Tho City"
                 }
             },
@@ -521,6 +521,27 @@
                 "San José": "Updating"
             }
         };
+
+        const translateJapan = {
+            "Japan": "日本",
+            "Tokyo": "東京",
+            "Sapporo": "札幌",
+            "Shizuoka": "静岡",
+            "Osaka": "大阪",
+            "Yokohama": "横浜",
+            "Aichi (Kariya Development Center)": "愛知（刈谷開発センター）",
+            "Hiroshima": "広島",
+            "Fukuoka-shi, Fukuoka": "福岡",
+            "Okinawa": "沖縄",
+            "Toyota Development Center": "豊田開発センター",
+            "Nagoya Office": "名古屋事業所",
+            "Vietnam": "ベトナム",
+            "Hanoi": "ハノイ",
+            "Da Nang": "ダナン",
+            "Quy Nhon": "クイニョン",
+            "Ho Chi Minh": "ホーチミン市",
+            "Can Tho": "カントー"
+        };
         // Tooltip handling in Worldmap
         const showLeft = ['UK', 'France', 'Germany', 'Slovakia', 'Belgium', 'Czech Republic', "Vietnam", "Japan"];
         const showCenter = ['US', 'Canada', 'Colombia', 'Costa Rica', 'Australia', 'Japan', 'Malaysia', 'Myanmar', 'Philippines', 'Singapore', 'South Korea', 'Taiwan', 'Thailand', 'Indonesia', 'Hongkong'];
@@ -641,12 +662,14 @@
             tooltip.style.left = 10 + '%';
         };
 
-        function updateZoomTooltipData(country, name) {
-            var newData = "<h2 class='color-orange'>" + name + "</h2>";
+        function updateZoomTooltipData(country, cityName) {
+            var translatedCityName = translateJapan[cityName];
+            var newData = "<h2 class='color-orange'>" + translatedCityName + "</h2>";
             console.log(name);
             var city = tooltipData[country];
-            console.log(city[name]);
-            for (const [location, address] of Object.entries(city[name])) {
+
+            console.log(city[translatedCityName]);
+            for (const [location, address] of Object.entries(city[translatedCityName])) {
                 newData += "<p>" + location + ":<br>" + address + "</p>";
             }
             console.log(newData);
