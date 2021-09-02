@@ -341,7 +341,8 @@
                     this.isHideTour = false;
                     // document.getElementById("tourframe").src = this.tourSrc;
                     // initializeYtPlayer();
-                    window.location.href = this.tourSrc;
+                    // window.location.href = this.tourSrc;
+                    linkToTour(this.tourSrc);
                 },
                 hrefLink(link) {
                     // window.open(link);
@@ -370,6 +371,11 @@
             }
         }).mount("#mount");
         // vm.mount("#mount");
+
+
+        function linkToTour(linkTour) {
+            parent.window.location = linkTour;
+        }
 
         // World UI handling
         const countriesCode = {
