@@ -312,6 +312,7 @@
                     this.isVideoShowing = true;
                     this.countryCurrentVideo = country;
                     this.isWorldUIShow = false;
+                    this.isLoading = true;
                     if (urlvideoid !== "") {
                         // initializeYtPlayer(urlvideoid);
                         initVideo(urlvideoid);
@@ -348,6 +349,7 @@
                 },
                 dismissVideo() {
                     this.isVideoShowing = false;
+                    this.isLoading = false;
                     stopCurrentVideo(this.currentVidId);
                     this.activateCountry(this.countryCurrentVideo);
                 }
