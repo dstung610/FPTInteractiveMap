@@ -5,8 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" property="og:title" content="Virtual Campus Tour | FPT Software Village 2">
+    <meta name="description" property="og:description" content="Explore one of the largest data centers in Vietnam  F-Ville 2 from your home.Navigate around our campus and its surroundings through this interactive experience">
+    <meta name="thumbnail" property="og:image" content="./assets/thumb.jpg">
+    <meta name="url" property="og:url" content="https://campus.fpt-software.com/world/">
+
     <title>FPT MAP</title>
 
+    <link rel="icon" type="image/png" href="./assets/favicon.jpg" />
     <link rel="manifest" href="manifest.json" />
     <link rel="stylesheet" href="./fptmap.css">
 
@@ -52,8 +58,8 @@
                 <!-- Language Switch -->
                 <div class="language UI">
                     <div class="flexRow">
-                        <div id="flag-vn" class='flag' title="Vietnamese" @click="hrefLink('index.html')"></div>
-                        <div id='flag-jp' class='flag' title="Japanese" @click="hrefLink('jp.html')"></div>
+                        <div id="flag-vn" class='flag' title="Vietnamese" @click="hrefLink('/en')"></div>
+                        <div id='flag-jp' class='flag' title="Japanese" @click="hrefLink('/jp')"></div>
                     </div>
                 </div>
 
