@@ -375,17 +375,11 @@ img {
     transform: rotate(0.5turn);
 }
 
+#backButton,
 #skipVideoButton {
     position: absolute;
-    top: 60%;
-    right: 0px;
-    width: 5vw;
-}
-
-#backButton {
-    position: absolute;
-    top: 5vh;
-    right: 10%;
+    top: 3vh;
+    right: 3vh;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -396,7 +390,7 @@ img {
     cursor: pointer;
 }
 
-#dismissVideoButton img,
+#skipVideoButton img,
 #backButton img {
     width: 50px;
 }
