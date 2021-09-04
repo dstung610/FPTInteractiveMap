@@ -230,6 +230,7 @@
                 <!-- Vietnam Addition Info on zoomed-->
                 <div>
                     <span class="country hide" id="zoom-vn-hanoi" @click="openTour()">HANOI</span>
+                    <span class="country hide" id="zoom-vn-danang" @click="showVideo('892d9d31-3f67-5474-677d-0cf3aba33262-vod-e060b3d5-07e2-4cac-6bc8-f4d3fee74d53','VN')">DANANG</span>
                 </div>
 
                 <!-- Tour Frame -->
@@ -353,6 +354,14 @@
                 hrefLink(link) {
                     // window.open(link);
                     window.location = link;
+                },
+                showVideo(videoId, country) {
+                    this.isZoomed = false;
+                    this.isVideoShowing = true;
+                    this.countryCurrentVideo = country;
+                    this.isWorldUIShow = false;
+                    this.isLoading = true;
+                    initVideo(videoId);
                 },
                 dismissVideo() {
                     this.isVideoShowing = false;
@@ -631,6 +640,9 @@
             if (name === 'Hanoi') {
                 initTour();
             }
+            if (name === "Da Nang") {
+                document.getElementById('zoom-vn-danang').click();
+            }
         }
 
         function zoomMouseOverHandler(country, city) {
@@ -671,7 +683,7 @@
 
         // Video player API
         var currentVidId = "";
-        var vidPlayer
+        var vidPlayer;
 
         function initVideo(CONTENT_ID) {
             currentVidId = CONTENT_ID;
@@ -680,6 +692,18 @@
                 width: 1080,
                 height: 720
             });
+
+            vidPlayer.onError(function(err) {
+                alert('Oops! An error occured!');
+                console.log("error type:", err.dc_type);
+                console.log("error msg:", err.dc_message);
+            });
+
+            vidPlayer.onComplete(function() {
+                console.log('Video Ended')
+                document.getElementById('skipVideoButton').click();
+            });
+
         };
 
         function stopCurrentVideo(currentVidId) {
