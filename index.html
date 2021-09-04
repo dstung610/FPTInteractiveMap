@@ -17,8 +17,8 @@
     <script type="text/javascript">
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             // Redirecion on mobile
-            const urlMobile = "https://campus.fpt-software.com/en/";
-            // window.location.assign(urlMobile);
+            const urlMobile = "https://campus.fpt-software.com/worldm/jp/";
+            window.location.assign(urlMobile);
         }
     </script>
 </head>
@@ -228,6 +228,8 @@
                 <!-- Vietnam Addition Info on zoomed-->
                 <div>
                     <span class="country hide" id="zoom-vn-hanoi" @click="openTour()">HANOI</span>
+                    <!-- DANANG JP 892d9d31-3f67-5474-677d-0cf3aba33262-vod-fdbc2bdf-3705-3dd6-5150-6e3223425f1b -->
+                    <span class="country hide" id="zoom-vn-danang" @click="showVideo('892d9d31-3f67-5474-677d-0cf3aba33262-vod-fdbc2bdf-3705-3dd6-5150-6e3223425f1b','VN')">DANANG</span>
                 </div>
 
                 <!-- Tour Frame -->
@@ -351,6 +353,14 @@
                 hrefLink(link) {
                     // window.open(link);
                     window.location = link;
+                },
+                showVideo(videoId, country) {
+                    this.isZoomed = false;
+                    this.isVideoShowing = true;
+                    this.countryCurrentVideo = country;
+                    this.isWorldUIShow = false;
+                    this.isLoading = true;
+                    initVideo(videoId);
                 },
                 dismissVideo() {
                     this.isVideoShowing = false;
@@ -674,6 +684,9 @@
             if (name === 'Hanoi') {
                 initTour();
             }
+            if (name === "Da Nang") {
+                document.getElementById('zoom-vn-danang').click();
+            }
         }
 
         function zoomMouseOverHandler(country, city) {
@@ -716,7 +729,7 @@
 
         // Video player API
         var currentVidId = "";
-        var vidPlayer
+        var vidPlayer;
 
         function initVideo(CONTENT_ID) {
             currentVidId = CONTENT_ID;
@@ -724,6 +737,19 @@
             vidPlayer = dacast(CONTENT_ID, 'player', {
                 width: 1080,
                 height: 720
+            });
+
+            vidPlayer.onError(function(err) {
+                vidPlayer.stop();
+                vidPlayer.dispose();
+                alert('Oops! An error occured!');
+                console.log("error type:", err.dc_type);
+                console.log("error msg:", err.dc_message);
+            });
+
+            vidPlayer.onComplete(function() {
+                console.log('Video Ended')
+                document.getElementById('skipVideoButton').click();
             });
         };
 

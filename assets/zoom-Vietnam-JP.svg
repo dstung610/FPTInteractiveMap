@@ -53,7 +53,7 @@
 	<clipPath id="SVGID_2_">
 		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
 	</clipPath>
-	<path id="danang" onmouseover="mouseOverHandler('Da Nang')" onmouseleave="mouseLeaveHandler('Da Nang')" class="st0" d="M770.7,533.1c-0.1,0.2,0,0.4,0.2,0.4c0.7,0.3,1.2-0.5,1.9-0.8c0.8-0.4,1.2-0.3,1-1.4
+	<path id="danang" onmouseover="mouseOverHandler('Da Nang')" onmouseleave="mouseLeaveHandler('Da Nang')"  onclick="clickHandler('Da Nang')" class="st0" d="M770.7,533.1c-0.1,0.2,0,0.4,0.2,0.4c0.7,0.3,1.2-0.5,1.9-0.8c0.8-0.4,1.2-0.3,1-1.4
 		c-0.1-0.8-0.4-1.6-0.8-2.3c-0.1-0.3-0.3-0.6-0.3-0.9c0-0.5,0.3-0.8,0.6-1.2c0.2-0.4,0.2-1-0.2-1.2c-0.2-0.1-0.5,0-0.7-0.1
 		c-0.3-0.1-0.4-0.5-0.3-0.9c0.1-0.5,0.9-1.4,1.4-1.6c0.4-0.2,0.8-0.2,1.1,0.1c0.2,0.1,0.2,0.4,0.4,0.5c0.4,0.3,0.9,0.2,1.3,0.3
 		c0.3,0.1,0.6,0.3,0.9,0.4c0.3,0.1,0.7,0.2,1-0.1c0.2-0.2,0.3-0.6,0.7-0.7c0.5-0.1,1,0.7,0.6,1.5c-0.4,1-2.2,1.7-3.3,1.8
@@ -3281,8 +3281,8 @@
 		C1241,651.6,1244.5,655.1,1244.5,659.5"/>
 	<line class="st22" x1="866.2" y1="659.5" x2="1236.7" y2="659.5"/>
 </g>
-<rect id="_x3C_Rectangle_x3E_DaNang" x="1274.9" y="506.2" onclick="clickHandler('danang')" onmouseover="mouseOverHandler('Da Nang')" onmouseleave="mouseLeaveHandler('Da Nang')" class="st27" width="101.5" height="34.8"/>
-<g id="_x3C_Group_x3E_DaNang" onclick="clickHandler('danang')" onmouseover="mouseOverHandler('Da Nang')" onmouseleave="mouseLeaveHandler('Da Nang')">
+<rect id="_x3C_Rectangle_x3E_DaNang" x="1274.9" y="506.2" onclick="clickHandler('Da Nang')" onmouseover="mouseOverHandler('Da Nang')" onmouseleave="mouseLeaveHandler('Da Nang')" class="st27" width="101.5" height="34.8"/>
+<g id="_x3C_Group_x3E_DaNang" onclick="clickHandler('Da Nang')" onmouseover="mouseOverHandler('Da Nang')" onmouseleave="mouseLeaveHandler('Da Nang')">
     <path class="st28" d="M1307,513c-0.2,0.8-0.4,1.6-0.7,2.3h8.1c0,0.8-0.1,1.8-0.3,3c-0.1,1.2-0.4,2.4-0.7,3.7
 		c-0.4,1.3-0.8,2.6-1.4,3.8c-0.6,1.2-1.4,2.3-2.3,3.4c-0.9,1-1.9,1.9-3.1,2.7c-1.1,0.7-2.4,1.3-3.8,1.8l-0.6-1.6
 		c3.1-1.1,5.5-3,7.1-5.5c0.1-0.2,0.2-0.3,0.3-0.4c-1.7-1.2-3.5-2.2-5.5-3.2l0.9-1.4c1.6,0.7,3.4,1.7,5.4,2.9
