@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="title" property="og:title" content="Virtual Campus Tour">
     <meta name="description" property="og:description" content="Explore FPT Campuses in Vietnam from your home. Navigate around our campuses and its surroundings through this interactive experience">
-    <meta name="thumbnail" property="og:image" content="./assets/thumb.jpg">
+    <meta name="image" property="og:image" content="./assets/thumb-en.jpg">
     <meta name="url" property="og:url" content="https://campus.fpt-software.com/world/">
 
     <title>FPT MAP</title>
 
-    <link rel="icon" type="image/png" href="./assets/favicon.jpg" />
     <link rel="manifest" href="manifest.json" />
+    <link rel="icon" type="image/png" href="./assets/favicon.jpg" />
     <link rel="stylesheet" href="./fptmap.css">
 
     <script type="text/javascript">
@@ -29,6 +29,9 @@
     <div class="container-fluid">
         <div class="row">
             <div class="wrapper" id="mount">
+                <div id="preload">
+                    <div class="loader"></div>
+                </div>
                 <!-- BotLeft Info Box -->
                 <div class="info" :class="{hide : !isWorldUIShow}">
                     <div class="img-fluid logo">
@@ -58,7 +61,7 @@
                 <!-- Language Switch -->
                 <div class="language UI">
                     <div class="flexRow">
-                        <div id="flag-vn" class='flag' title="Vietnamese" @click="hrefLink('/world/en')"></div>
+                        <div id="flag-en" class='flag' title="English" @click="hrefLink('/world/en')"></div>
                         <div id='flag-jp' class='flag' title="Japanese" @click="hrefLink('/world/jp')"></div>
                     </div>
                 </div>
@@ -230,6 +233,7 @@
                 <!-- Vietnam Addition Info on zoomed-->
                 <div>
                     <span class="country hide" id="zoom-vn-hanoi" @click="openTour()">HANOI</span>
+                    <!-- DA NANG EN -->
                     <span class="country hide" id="zoom-vn-danang" @click="showVideo('892d9d31-3f67-5474-677d-0cf3aba33262-vod-e060b3d5-07e2-4cac-6bc8-f4d3fee74d53','VN')">DANANG</span>
                 </div>
 
@@ -259,6 +263,10 @@
             svg = objDoc.getElementById('worldmap');
             console.log(svg);
         }
+
+        window.onload = function() {
+            document.getElementById('preload').style.display = "none";
+        };
 
         //Vue Instance
         const vm = Vue.createApp({
