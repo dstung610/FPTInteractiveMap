@@ -549,7 +549,7 @@ img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: aquamarine;
+    background-color: grey;
     border: 1px solid grey;
     margin: 0 2px;
 }
@@ -558,8 +558,8 @@ img {
     cursor: pointer;
 }
 
-#flag-vn {
-    background-image: url(./assets/vn.svg);
+#flag-en {
+    background-image: url(./assets/gb.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -570,4 +570,12 @@ img {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#preload {
+    position: absolute;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
 }
