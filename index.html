@@ -739,13 +739,14 @@
         // Video player API
         var currentVidId = "";
         var vidPlayer;
+        var widScr = window.screen.width * 0.5;
 
         function initVideo(CONTENT_ID) {
             currentVidId = CONTENT_ID;
             if (CONTENT_ID === "") return;
             vidPlayer = dacast(CONTENT_ID, 'player', {
-                width: 1080,
-                height: 720
+                width: widScr,
+                height: widScr / 16 * 9
             });
 
             vidPlayer.onError(function(err) {
