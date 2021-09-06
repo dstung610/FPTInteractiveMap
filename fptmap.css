@@ -583,3 +583,15 @@ img {
     height: 100vh;
     background-color: white;
 }
+
+#player-background {
+    position: absolute;
+    opacity: 0.3;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./assets/worldmapid.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2;
+}
