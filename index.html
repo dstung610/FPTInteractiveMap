@@ -240,6 +240,7 @@
                 <!-- Tour Frame -->
                 <div class="loader" :class="{hide: !isLoading}"></div>
                 <!-- <iframe id="tourframe" :class="{hidden: isHideTour}" style="position: absolute" frameborder='0' style='overflow:hidden;height:100%;width:100%' height='100%' width='100%'></iframe> -->
+                <div id="player-background" :class="{hide: !isVideoShowing}"></div>
                 <div id="player-wrapper" :class="{hide: !isVideoShowing}">
                     <div class="banner-video">
                         <div id="player">
@@ -722,14 +723,15 @@
             tooltip.style.left = 10 + '%';
         };
 
-        function updateZoomTooltipData(country, cityName) {
-            var translatedCityName = translateJapan[cityName];
-            var newData = "<h2 class='color-orange'>" + translatedCityName + "</h2>";
+        function updateZoomTooltipData(countryName, cityName) {
+            var city = translateJapan[cityName];
+            var country = translateJapan[countryName];
+            var newData = "<h2 class='color-orange'>" + city + "</h2>";
             console.log(name);
-            var city = tooltipData[country];
+            var cities = tooltipData[country];
 
-            console.log(city[translatedCityName]);
-            for (const [location, address] of Object.entries(city[translatedCityName])) {
+            console.log(city[city]);
+            for (const [location, address] of Object.entries(cities[city])) {
                 newData += "<p>" + location + ":<br>" + address + "</p>";
             }
             console.log(newData);

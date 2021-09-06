@@ -96,7 +96,7 @@ p {
     margin-top: 0;
     margin-bottom: 1rem;
     position: relative;
-    font-size: 16px;
+    font-size: 13px;
 }
 
 img {
@@ -322,7 +322,7 @@ img {
 
 #menuWrapper {
     position: absolute;
-    height: 100vh;
+    min-height: 100vh;
     width: auto;
 }
 
@@ -350,7 +350,7 @@ img {
     left: 50%;
     transform: translateX(-50%);
     width: 9vw;
-    bottom: -15%;
+    bottom: -10%;
     z-index: 5;
 }
 
@@ -582,4 +582,16 @@ img {
     width: 100vw;
     height: 100vh;
     background-color: white;
+}
+
+#player-background {
+    position: absolute;
+    opacity: 0.3;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./assets/worldmapid.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2;
 }
