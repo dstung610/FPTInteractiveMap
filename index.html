@@ -103,7 +103,7 @@
                                         <p class="country" @click="clickCountry('Indonesia', true)">インドネシア</p>
                                     </div>
                                     <div class="flexColumn SubGroup" id="AsiaSubGroup2">
-                                        <span class="country" id='menu-JP' @mouseover="hoverCountry('JP')" @mouseleave="unhoverCountry()" @click="activateCountry('JP')">日本</span>
+                                        <p class="country" id='menu-JP' @mouseover="hoverCountry('JP')" @mouseleave="unhoverCountry()" @click="activateCountry('JP')">日本</p>
                                         <!-- <p class="country" @click="clickCountry('New Zealand')">New Zealand</p> -->
                                         <p class="country" @click="clickCountry('Malaysia', true)">マレーシア</p>
                                         <p class="country" @click="clickCountry('Myanmar', true)">ミャンマー</p>
@@ -172,7 +172,7 @@
                             <p class="country" @click="clickCountry('Indonesia')">インドネシア</p>
                         </div>
                         <div class="flexColumn SubGroup" id="AsiaSubGroup2">
-                            <span class="country" id='JP' @mouseover="hoverCountry('JP')" @mouseleave="unhoverCountry()" @click="activateCountryPrecontent('JP')">日本</span>
+                            <p class="country" id='JP' @mouseover="hoverCountry('JP')" @mouseleave="unhoverCountry()" @click="activateCountryPrecontent('JP')">日本</p>
                             <!-- <p class="country" @click="clickCountry('New Zealand')">New Zealand</p> -->
                             <p class="country" @click="clickCountry('Malaysia')">マレーシア</p>
                             <p class="country" @click="clickCountry('Myanmar')">ミャンマー</p>
@@ -239,6 +239,7 @@
 
                 <!-- Tour Frame -->
                 <div class="loader" :class="{hide: !isLoading}"></div>
+                <div class="loader hide" id="loaderTrigger" @click="loaderHide()"></div>
                 <!-- <iframe id="tourframe" :class="{hidden: isHideTour}" style="position: absolute" frameborder='0' style='overflow:hidden;height:100%;width:100%' height='100%' width='100%'></iframe> -->
                 <div id="player-background" :class="{hide: !isVideoShowing}"></div>
                 <div id="player-wrapper" :class="{hide: !isVideoShowing}">
@@ -330,7 +331,6 @@
                     this.isWorldUIShow = false;
                     this.isLoading = true;
                     if (urlvideoid !== "") {
-                        // initializeYtPlayer(urlvideoid);
                         initVideo(urlvideoid);
                     }
                 },
@@ -355,8 +355,6 @@
                 openTour() {
                     this.isLoading = true;
                     this.isHideTour = false;
-                    // document.getElementById("tourframe").src = this.tourSrc;
-                    // initializeYtPlayer();
                     // window.location.href = this.tourSrc;
                     linkToTour(this.tourSrc);
                 },
@@ -377,6 +375,9 @@
                     this.isLoading = false;
                     stopCurrentVideo(this.currentVidId);
                     this.activateCountry(this.countryCurrentVideo);
+                },
+                loaderHide() {
+                    this.isLoading = false;
                 }
             },
             computed: {
@@ -741,7 +742,8 @@
         // Video player API
         var currentVidId = "";
         var vidPlayer;
-        var widScr = window.screen.width * 0.5;
+        // var widScr = window.screen.width * 0.5;
+        var widScr = window.innerWidth * 0.5;
 
         function initVideo(CONTENT_ID) {
             currentVidId = CONTENT_ID;
@@ -759,6 +761,10 @@
                 console.log("error msg:", err.dc_message);
             });
 
+            vidPlayer.onReady(function() {
+                document.getElementById('loaderTrigger').click();
+            });
+
             vidPlayer.onComplete(function() {
                 console.log('Video Ended')
                 document.getElementById('skipVideoButton').click();
@@ -770,72 +776,6 @@
             vidPlayer.stop();
             vidPlayer.dispose();
         }
-
-        // Youtube Embed API
-        // 2. This code loads the IFrame Player API code asynchronously.
-        // var tag = document.createElement('script');
-
-        // tag.src = "https://www.youtube.com/iframe_api";
-        // var firstScriptTag = document.getElementsByTagName('script')[0];
-        // firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-        // // 3. This function creates an <iframe> (and YouTube player)
-        // //    after the API code downloads.
-        // var player;
-        // var playerReady = false;
-
-        // function onYouTubeIframeAPIReady() {
-        //     playerReady = true;
-        // }
-
-        // function initializeYtPlayer(id) {
-        //     document.getElementById('player-wrapper').style.zIndex = "0";
-        //     player = new YT.Player('player', {
-        //         height: '100%',
-        //         width: '100%',
-        //         videoId: id,
-        //         playerVars: {
-        //             // 'autoplay': 1,
-        //             'showinfo': 0,
-        //             'modestbranding': 1,
-        //             'control': 0,
-        //             'origin': window.location.origin
-        //         },
-        //         host: 'https://www.youtube.com',
-
-        //         events: {
-        //             'onReady': onPlayerReady,
-        //             'onStateChange': onPlayerStateChange
-        //         }
-        //     });
-        // }
-
-        // // 4. The API will call this function when the video player is ready.
-        // function onPlayerReady(event) {
-        //     event.target.playVideo();
-        // }
-
-        // // 5. The API calls this function when the player's state changes.
-        // //    The function indicates that when playing a video (state=1),
-        // //    the player should play for six seconds and then stop.
-        // var done = false;
-
-        // function onPlayerStateChange(event) {
-        //     if (event.data == YT.PlayerState.PLAYING && !done) {
-        //         setTimeout(stopVideo, 6000);
-        //         done = true;
-        //     }
-        //     if (event.data === 0) {
-        //         console.log("DONE");
-        //         // Redirection after video end
-        //         // window.location.href = 'https://campus.fpt-software.com/en/';
-        //         document.getElementById('player').style.display = "none";
-        //     }
-        // }
-
-        // function stopVideo() {
-        //     player.stopVideo();
-        // }
     </script>
 </body>
 
