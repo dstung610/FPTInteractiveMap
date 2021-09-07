@@ -288,7 +288,7 @@ img {
 
 .info {
     position: absolute;
-    bottom: 5%;
+    bottom: 1%;
     left: 50px;
 }
 
@@ -298,6 +298,21 @@ img {
 
 .colorNumber {
     color: #fe7c40;
+}
+
+#shortcut-button {
+    background-color: #FE7C40;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    width: auto;
+}
+
+.clickable:hover {
+    cursor: pointer;
 }
 
 

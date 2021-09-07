@@ -33,7 +33,7 @@
                     <div class="loader"></div>
                 </div>
                 <!-- BotLeft Info Box -->
-                <div class="info" :class="{hide : !isWorldUIShow}">
+                <div class="info UI" :class="{hide : !isWorldUIShow}">
                     <div class="img-fluid logo">
                         <img id="fpt-logo" :class="{hide: isZoomed}" src="./assets/fpt-logo.png" @click="hrefLink('https://www.fpt-software.com/')" /><br>
                     </div>
@@ -50,6 +50,9 @@
                         <div>
                             <h4 class="color-orange">22 </h4>
                             <h5>開発センター</h5>
+                        </div>
+                        <div id="shortcut-button" @click="openTour('Hanoi')">
+                            <div class="clickable">ハノイ - 本社</div>
                         </div>
                     </div>
                 </div>
@@ -76,10 +79,10 @@
                     <div id="menuContent" class="menu-content">
                         <div id="menuButton" class="flexRow" @click="menuToggle()" :class="{hide : !isZoomed}">
                             <div class="menu-title">
-                                <h2 class="color-blue" id="menuTitle" class="UI">国</h3>
-                                    <div class="icon-arrow">
-                                        <span id="menuArrow" :class="{pointIn: isMenuShow}"><img src="./assets/arrow.png"/></span>
-                                    </div>
+                                <h2 class="color-blue" id="menuTitle" class="UI">国</h2>
+                                <div class="icon-arrow">
+                                    <span id="menuArrow" :class="{pointIn: isMenuShow}"><img src="./assets/arrow.png"/></span>
+                                </div>
                             </div>
 
                         </div>
@@ -603,8 +606,8 @@
         };
         // Tooltip handling in Worldmap
         const showLeft = ['UK', 'France', 'Germany', 'Slovakia', 'Belgium', 'Czech Republic', "Vietnam", "Japan"];
-        const showCenter = ['US', 'Canada', 'Colombia', 'Costa Rica', 'Australia', 'Japan', 'Malaysia', 'Myanmar', 'Philippines', 'Singapore', 'South Korea', 'Taiwan', 'Thailand', 'Indonesia', 'Hongkong'];
-        const showRight = ['India', 'UAE', 'China']
+        const showCenter = ['US', 'Canada', 'Colombia', 'Costa Rica', 'Australia', 'Japan', 'Malaysia', 'Philippines', 'Singapore', 'South Korea', 'Taiwan', 'Indonesia', 'Hongkong'];
+        const showRight = ['India', 'UAE', 'China', 'Myanmar', 'Thailand']
 
         function updateTooltipPosition(name) {
             var pos, tooltips = document.getElementById('tooltip');
