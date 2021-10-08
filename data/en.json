@@ -30,7 +30,7 @@
                 "KDX Hamamatsucho Place Building 6F, Shibakoen 1-7-6, Minato-ku, Tokyo, 105-0011 Japan": "TEL: (+81)3-6634-6868<br>FAX: (+81)3-6634-6869"
             },
             "FPT Japanese School": {
-                "FPT Japanese Language School<br>4-3-5 Higashinippori, Arakawa-ku, Tokyo, 116-0014 Japan": "FPT Nippori Building TEL: (+81)3-5615-1012 <br>FAX: (+81)3-5615-1013"
+                "FPT Japanese Language School<br>4-3-5 Higashinippori, Arakawa-ku, Tokyo, 116-0014 Japan": "FPT Nippori Building <br>TEL: (+81)3-5615-1012 <br>FAX: (+81)3-5615-1013"
             },
             "Yokohama Branch": {
                 "Pacific Marks Yokohama East Building 6F, Sakaecho 3-4, Kanagawa-ku, Yokohama, Kanagawa, 221-0052 Japan": "TEL: (+81)45-440-3738 <br>FAX: (+81)45-440-3739"
@@ -51,7 +51,7 @@
                 "Hanamura Bld 8F, Hakataekihigashi 1-12-6, Hakata-ku, Fukuoka-shi, Fukuoka, 812-0013 Japan": "TEL: (+81)92-452-9911 <br>FAX: (+81)92-452-9912"
             },
             "FPT Okinawa Development Center": {
-                "JEI Naha Bld 6F, Kumoji 2-8-1, Naha-shi, Okinawa, 900-0015 Japan": "TEL: (+81)98-861-7311 <br>FAX: (+81)92-452-9912"
+                "JEI Naha Bld 6F, Kumoji 2-8-1, Naha-shi, Okinawa, 900-0015 Japan": "TEL: (+81)98-861-7311 <br>FAX: (+81)98-861-7313"
             }
         },
         "Australia": {
@@ -163,17 +163,16 @@
         "Belgium": "Belgium",
         "Costa Rica": "Costa Rica",
         "Japan": "Japan",
-        "Tokyo": "Tokyo",
-        "Sapporo": "Sapporo",
-        "Shizuoka": "Shizuoka",
-        "Osaka": "Osaka",
-        "Yokohama": "Yokohama",
-        "Aichi (Kariya Development Center)": "Aichi (Kariya Development Center)",
-        "Hiroshima": "Hiroshima",
-        "Fukuoka-shi, Fukuoka": "Fukuoka-shi, Fukuoka",
-        "Okinawa": "Okinawa",
-        "Toyota Development Center": "Toyota Development Center",
-        "Nagoya Office": "Nagoya Office",
+        "Sapporo Branch": "Sapporo Branch",
+        "Tokyo Head Quarter": "Tokyo Head Quarter",
+        "FPT Japanese School": "FPT Japanese School",
+        "Yokohama Branch": "Yokohama Branch",
+        "Nagoya Branch": "Nagoya Branch",
+        "Kariya Development Center": "Kariya Development Center",
+        "Osaka Branch": "Osaka Branch",
+        "Hiroshima Branch": "Hiroshima Branch",
+        "Fukuoka Branch": "Fukuoka Branch",
+        "FPT Okinawa Development Center": "FPT Okinawa Development Center",
         "Vietnam": "Vietnam",
         "Hanoi": "Hanoi",
         "Da Nang": "Da Nang",
